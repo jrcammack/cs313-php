@@ -17,3 +17,7 @@ body {
    font-size: small;
    background-color: aqua;
 }
+
+#div1:hover, #div2:hover, #div3:hover {
+   font-weight: bold;
+}
