@@ -1,0 +1,19 @@
+body {
+   margin: 0%;
+   padding: 0%;
+}
+
+#div1 {
+   font-size: xx-large;
+   background-color: aqua;
+}
+
+#div2 {
+   font-size: medium;
+   background-color: aquamarine;
+}
+
+#div3 {
+   font-size: small;
+   background-color: aqua;
+}
