@@ -4,7 +4,7 @@ body {
 }
 
 .col-lg-12 {
-   background-image: url("camping_pic.jpg");
+   background-image: url("camping_pic.png");
    background-size: cover;
    height: 100%;
 }
