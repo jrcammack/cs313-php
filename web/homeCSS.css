@@ -3,17 +3,17 @@ body {
    padding: 0%;
 }
 
-.col-lg-12 {
+#bannerColumn {
    background-image: url("camping_pic.png");
    background-size: cover;
    height: 100%;
 }
 
-.row {
+#bannerRow {
    height: 100%;
 }
 
-.container-fluid {
+#banner {
    height: 200px;
    width: 100%;
 }
