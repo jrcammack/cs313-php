@@ -51,7 +51,7 @@
             <div id="infoCol3" class="col-lg-4"><div onclick="revealFact2()" class="well well-lg">Do a lot of people go camping?</div></div>
          </div>
          <div id="infoRow1" class="row">
-            <div id="infoCol" class="col-lg-12">Here are a few popular places to find good camping gear if you are just starting out!<?php echo "Rgiht now it is" . date("h:i:sa") . ". What are you waiting for?"; ?></div>
+            <div id="infoCol" class="col-lg-12">Here are a few popular places to find good camping gear if you are just starting out!<?php echo " Rgiht now it is" . date("h:i:sa") . ". What are you waiting for?"; ?></div>
          </div>
          <div id="infoRow2" class="row">
             <div id="infoCol4" class="col-lg-3"><img src="cabelas_logo.png" alt="cabelas" height="200px" width="200px"></div>
