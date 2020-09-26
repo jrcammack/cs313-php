@@ -3,13 +3,14 @@ body {
    padding: 0%;
 }
 
-#banner {
-
-}
-
 .col-lg-12 {
    background-image: url("camping_pic.jpg");
    background-size: cover;
+   height: 100%;
+}
+
+.row {
+   height: 100%;
 }
 
 .container-fluid {
