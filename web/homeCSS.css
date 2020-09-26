@@ -17,3 +17,7 @@ body {
    height: 200px;
    width: 100%;
 }
+
+#info, #intro {
+   padding-top: 20px;
+}
