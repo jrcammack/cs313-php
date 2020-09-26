@@ -11,3 +11,8 @@ body {
    background-image: url("camping_pic.jpg");
    background-size: cover;
 }
+
+.container-fluid {
+   height: 200px;
+   width: 100%;
+}
