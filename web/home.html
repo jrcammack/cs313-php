@@ -5,7 +5,7 @@
       <title>HELLO WORLD</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script type="text/javascript" src=""></script>
+      <script type="text/javascript" src="homeJS.js"></script>
       <!-- jQuery Library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -38,16 +38,13 @@
       </div>
       <div id="info" class="container-fluid">
          <div id="infoRow" class="row">
-            <div id="infoCol2" class="col-lg-4"><div class="well well-lg">Camping can relieve stress and depression</div></div>
-            <div id="infoCol1" class="col-lg-4">
-               <div class="well well-lg">
-                  Basic Items to Bring
-                  <ul id="itemsNeeded">
-                     <li>Tent</li><li>Sleeping Bag</li><li>Outdoor Shoes</li><li>Cookware</li><li>Fire Starters</li><li>Food/Water</li>
-                  </ul>
+            <div id="infoCol1" class="col-lg-4"><div onclick="revealFact1()" class="well well-lg">REVEAL FACT #1</div></div>
+            <div id="infoCol2" class="col-lg-4">
+               <div onclick="revealItems()" class="well well-lg">
+                  What Should I Bring??
                </div>
             </div>
-            <div id="infoCol3" class="col-lg-4"><div class="well well-lg">14% of the U.S. population goes camping each year</div></div>
+            <div id="infoCol3" class="col-lg-4"><div onclick="revealFact2()" class="well well-lg">REVEAL FACT #2</div></div>
          </div>
       </div>      
    </body>
