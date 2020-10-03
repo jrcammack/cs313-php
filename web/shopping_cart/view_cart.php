@@ -1,285 +1,6 @@
 <?php
    //start the session
    session_start();
-
-   class Tent {
-      public $quantity;
-      public $price;
-      public $totalPrice;
-
-      function __construct() {
-         $this->quantity = 0.0;
-         $this->price = 200.00;
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-
-      function getQuantity(){
-         return $this->quantity;
-      }
-      function setQuantity($num){
-         $this->quantity = $num;
-      }
-      function getPrice(){
-         return $this->price;
-      }
-      function setPrice($num){
-         $this->price = $num;
-      }
-      function getTotalPrice(){
-         return $this->totalPrice;
-      }
-      function setTotalPrice(){
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-   }
-
-   class CampingChair {
-      public $quantity;
-      public $price;
-      public $totalPrice;
-
-      function __construct() {
-         $this->quantity = 0.0;
-         $this->price = 50.00;
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-
-      function getQuantity(){
-         return $this->quantity;
-      }
-      function setQuantity($num){
-         $this->quantity = $num;
-      }
-      function getPrice(){
-         return $this->price;
-      }
-      function setPrice($num){
-         $this->price = $num;
-      }
-      function getTotalPrice(){
-         return $this->totalPrice;
-      }
-      function setTotalPrice(){
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-   }
-
-   class Cookware {
-      public $quantity;
-      public $price;
-      public $totalPrice;
-
-      function __construct() {
-         $this->quantity = 0.0;
-         $this->price = 20.00;
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-
-      function getQuantity(){
-         return $this->quantity;
-      }
-      function setQuantity($num){
-         $this->quantity = $num;
-      }
-      function getPrice(){
-         return $this->price;
-      }
-      function setPrice($num){
-         $this->price = $num;
-      }
-      function getTotalPrice(){
-         return $this->totalPrice;
-      }
-      function setTotalPrice(){
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-   }
-
-   class Cooler {
-      public $quantity;
-      public $price;
-      public $totalPrice;
-
-      function __construct() {
-         $this->quantity = 0.0;
-         $this->price = 40.00;
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-
-      function getQuantity(){
-         return $this->quantity;
-      }
-      function setQuantity($num){
-         $this->quantity = $num;
-      }
-      function getPrice(){
-         return $this->price;
-      }
-      function setPrice($num){
-         $this->price = $num;
-      }
-      function getTotalPrice(){
-         return $this->totalPrice;
-      }
-      function setTotalPrice(){
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-   }
-
-   class Flashlight {
-      public $quantity;
-      public $price;
-      public $totalPrice;
-
-      function __construct() {
-         $this->quantity = 0.0;
-         $this->price = 10.00;
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-
-      function getQuantity(){
-         return $this->quantity;
-      }
-      function setQuantity($num){
-         $this->quantity = $num;
-      }
-      function getPrice(){
-         return $this->price;
-      }
-      function setPrice($num){
-         $this->price = $num;
-      }
-      function getTotalPrice(){
-         return $this->totalPrice;
-      }
-      function setTotalPrice(){
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-   }
-
-   class Hammock {
-      public $quantity;
-      public $price;
-      public $totalPrice;
-
-      function __construct() {
-         $this->quantity = 0.0;
-         $this->price = 75.00;
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-
-      function getQuantity(){
-         return $this->quantity;
-      }
-      function setQuantity($num){
-         $this->quantity = $num;
-      }
-      function getPrice(){
-         return $this->price;
-      }
-      function setPrice($num){
-         $this->price = $num;
-      }
-      function getTotalPrice(){
-         return $this->totalPrice;
-      }
-      function setTotalPrice(){
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-   }
-
-   class HikingBackpack {
-      public $quantity;
-      public $price;
-      public $totalPrice;
-
-      function __construct() {
-         $this->quantity = 0.0;
-         $this->price = 100.00;
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-
-      function getQuantity(){
-         return $this->quantity;
-      }
-      function setQuantity($num){
-         $this->quantity = $num;
-      }
-      function getPrice(){
-         return $this->price;
-      }
-      function setPrice($num){
-         $this->price = $num;
-      }
-      function getTotalPrice(){
-         return $this->totalPrice;
-      }
-      function setTotalPrice(){
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-   }
-
-   class MountainBike {
-      public $quantity;
-      public $price;
-      public $totalPrice;
-
-      function __construct() {
-         $this->quantity = 0.0;
-         $this->price = 250.00;
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-
-      function getQuantity(){
-         return $this->quantity;
-      }
-      function setQuantity($num){
-         $this->quantity = $num;
-      }
-      function getPrice(){
-         return $this->price;
-      }
-      function setPrice($num){
-         $this->price = $num;
-      }
-      function getTotalPrice(){
-         return $this->totalPrice;
-      }
-      function setTotalPrice(){
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-   }
-
-   class SleepingBag {
-      public $quantity;
-      public $price;
-      public $totalPrice;
-
-      function __construct() {
-         $this->quantity = 0.0;
-         $this->price = 90.00;
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-
-      function getQuantity(){
-         return $this->quantity;
-      }
-      function setQuantity($num){
-         $this->quantity = $num;
-      }
-      function getPrice(){
-         return $this->price;
-      }
-      function setPrice($num){
-         $this->price = $num;
-      }
-      function getTotalPrice(){
-         return $this->totalPrice;
-      }
-      function setTotalPrice(){
-         $this->totalPrice = $this->quantity * $this->price;
-      }
-   }
 ?>
 
 <!DOCTYPE html>
@@ -302,6 +23,286 @@
    </head>
 
    <body>
+      <?php
+         class Tent {
+            public $quantity;
+            public $price;
+            public $totalPrice;
+      
+            function __construct() {
+               $this->quantity = 0.0;
+               $this->price = 200.00;
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+      
+            function getQuantity(){
+               return $this->quantity;
+            }
+            function setQuantity($num){
+               $this->quantity = $num;
+            }
+            function getPrice(){
+               return $this->price;
+            }
+            function setPrice($num){
+               $this->price = $num;
+            }
+            function getTotalPrice(){
+               return $this->totalPrice;
+            }
+            function setTotalPrice(){
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+         }
+      
+         class CampingChair {
+            public $quantity;
+            public $price;
+            public $totalPrice;
+      
+            function __construct() {
+               $this->quantity = 0.0;
+               $this->price = 50.00;
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+      
+            function getQuantity(){
+               return $this->quantity;
+            }
+            function setQuantity($num){
+               $this->quantity = $num;
+            }
+            function getPrice(){
+               return $this->price;
+            }
+            function setPrice($num){
+               $this->price = $num;
+            }
+            function getTotalPrice(){
+               return $this->totalPrice;
+            }
+            function setTotalPrice(){
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+         }
+      
+         class Cookware {
+            public $quantity;
+            public $price;
+            public $totalPrice;
+      
+            function __construct() {
+               $this->quantity = 0.0;
+               $this->price = 20.00;
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+      
+            function getQuantity(){
+               return $this->quantity;
+            }
+            function setQuantity($num){
+               $this->quantity = $num;
+            }
+            function getPrice(){
+               return $this->price;
+            }
+            function setPrice($num){
+               $this->price = $num;
+            }
+            function getTotalPrice(){
+               return $this->totalPrice;
+            }
+            function setTotalPrice(){
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+         }
+      
+         class Cooler {
+            public $quantity;
+            public $price;
+            public $totalPrice;
+      
+            function __construct() {
+               $this->quantity = 0.0;
+               $this->price = 40.00;
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+      
+            function getQuantity(){
+               return $this->quantity;
+            }
+            function setQuantity($num){
+               $this->quantity = $num;
+            }
+            function getPrice(){
+               return $this->price;
+            }
+            function setPrice($num){
+               $this->price = $num;
+            }
+            function getTotalPrice(){
+               return $this->totalPrice;
+            }
+            function setTotalPrice(){
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+         }
+      
+         class Flashlight {
+            public $quantity;
+            public $price;
+            public $totalPrice;
+      
+            function __construct() {
+               $this->quantity = 0.0;
+               $this->price = 10.00;
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+      
+            function getQuantity(){
+               return $this->quantity;
+            }
+            function setQuantity($num){
+               $this->quantity = $num;
+            }
+            function getPrice(){
+               return $this->price;
+            }
+            function setPrice($num){
+               $this->price = $num;
+            }
+            function getTotalPrice(){
+               return $this->totalPrice;
+            }
+            function setTotalPrice(){
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+         }
+      
+         class Hammock {
+            public $quantity;
+            public $price;
+            public $totalPrice;
+      
+            function __construct() {
+               $this->quantity = 0.0;
+               $this->price = 75.00;
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+      
+            function getQuantity(){
+               return $this->quantity;
+            }
+            function setQuantity($num){
+               $this->quantity = $num;
+            }
+            function getPrice(){
+               return $this->price;
+            }
+            function setPrice($num){
+               $this->price = $num;
+            }
+            function getTotalPrice(){
+               return $this->totalPrice;
+            }
+            function setTotalPrice(){
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+         }
+      
+         class HikingBackpack {
+            public $quantity;
+            public $price;
+            public $totalPrice;
+      
+            function __construct() {
+               $this->quantity = 0.0;
+               $this->price = 100.00;
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+      
+            function getQuantity(){
+               return $this->quantity;
+            }
+            function setQuantity($num){
+               $this->quantity = $num;
+            }
+            function getPrice(){
+               return $this->price;
+            }
+            function setPrice($num){
+               $this->price = $num;
+            }
+            function getTotalPrice(){
+               return $this->totalPrice;
+            }
+            function setTotalPrice(){
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+         }
+      
+         class MountainBike {
+            public $quantity;
+            public $price;
+            public $totalPrice;
+      
+            function __construct() {
+               $this->quantity = 0.0;
+               $this->price = 250.00;
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+      
+            function getQuantity(){
+               return $this->quantity;
+            }
+            function setQuantity($num){
+               $this->quantity = $num;
+            }
+            function getPrice(){
+               return $this->price;
+            }
+            function setPrice($num){
+               $this->price = $num;
+            }
+            function getTotalPrice(){
+               return $this->totalPrice;
+            }
+            function setTotalPrice(){
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+         }
+      
+         class SleepingBag {
+            public $quantity;
+            public $price;
+            public $totalPrice;
+      
+            function __construct() {
+               $this->quantity = 0.0;
+               $this->price = 90.00;
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+      
+            function getQuantity(){
+               return $this->quantity;
+            }
+            function setQuantity($num){
+               $this->quantity = $num;
+            }
+            function getPrice(){
+               return $this->price;
+            }
+            function setPrice($num){
+               $this->price = $num;
+            }
+            function getTotalPrice(){
+               return $this->totalPrice;
+            }
+            function setTotalPrice(){
+               $this->totalPrice = $this->quantity * $this->price;
+            }
+         }
+      ?>
       <div id="banner" class="container-fluid">
          <div id="bannerRow" class="row">
             <div id="bannerColumn" class="col-lg-12">
