@@ -25,9 +25,32 @@
    <body>
       <?php
          //set session variables if not set
-         if (!isset($_SESSION["cart"])){
-            $items = array();
-            $_SESSION["cart"] = $items;
+         if (!isset($_SESSION["tent"])){
+            $_SESSION["tent"] = '';
+         }
+         if (!isset($_SESSION["camping chair"])){
+            $_SESSION["camping chair"] = '';
+         }
+         if (!isset($_SESSION["cookware"])){
+            $_SESSION["cookware"] = '';
+         }
+         if (!isset($_SESSION["cooler"])){
+            $_SESSION["cooler"] = '';
+         }
+         if (!isset($_SESSION["flashlight"])){
+            $_SESSION["flashlight"] = '';
+         }
+         if (!isset($_SESSION["hammock"])){
+            $_SESSION["hammock"] = '';
+         }
+         if (!isset($_SESSION["hiking backpack"])){
+            $_SESSION["hiking backpack"] = '';
+         }
+         if (!isset($_SESSION["mountain bike"])){
+            $_SESSION["mountain bike"] = '';
+         }
+         if (!isset($_SESSION["sleeping bag"])){
+            $_SESSION["sleeping bag"] = '';
          }
          if (!isset($_SESSION["numInCart"])){
             $_SESSION["numInCart"] = 0;
@@ -45,7 +68,7 @@
       <div id="infoRow" class="row">
          <div id="" class="col-lg-8"><div class=""></div></div>
          <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Number of Items in Cart: 0</div></div>
-         <div id="infoCol1" class="col-lg-2"><div class=""><button class="addCart" type="button">View Cart</button></div></div>
+         <div id="infoCol1" class="col-lg-2"><div class=""><a href="view_cart.php" class="btn btn-primary">View Cart</a></div></div>
       </div>
       <div id="info" class="container-fluid">
          <div id="infoRow" class="row">
