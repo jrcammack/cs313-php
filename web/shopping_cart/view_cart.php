@@ -28,6 +28,9 @@
       function getTotalPrice(){
          return $this->totalPrice;
       }
+      function setTotalPrice(){
+         $this->totalPrice = $this->quantity * $this->price;
+      }
    }
 
    class CampingChair {
@@ -55,6 +58,9 @@
       }
       function getTotalPrice(){
          return $this->$totalPrice;
+      }
+      function setTotalPrice(){
+         $this->totalPrice = $this->quantity * $this->price;
       }
    }
 
@@ -84,6 +90,9 @@
       function getTotalPrice(){
          return $this->totalPrice;
       }
+      function setTotalPrice(){
+         $this->totalPrice = $this->quantity * $this->price;
+      }
    }
 
    class Cooler {
@@ -111,6 +120,9 @@
       }
       function getTotalPrice(){
          return $this->totalPrice;
+      }
+      function setTotalPrice(){
+         $this->totalPrice = $this->quantity * $this->price;
       }
    }
 
@@ -140,6 +152,9 @@
       function getTotalPrice(){
          return $this->totalPrice;
       }
+      function setTotalPrice(){
+         $this->totalPrice = $this->quantity * $this->price;
+      }
    }
 
    class Hammock {
@@ -167,6 +182,9 @@
       }
       function getTotalPrice(){
          return $this->totalPrice;
+      }
+      function setTotalPrice(){
+         $this->totalPrice = $this->quantity * $this->price;
       }
    }
 
@@ -196,6 +214,9 @@
       function getTotalPrice(){
          return $this->totalPrice;
       }
+      function setTotalPrice(){
+         $this->totalPrice = $this->quantity * $this->price;
+      }
    }
 
    class MountainBike {
@@ -224,6 +245,9 @@
       function getTotalPrice(){
          return $this->totalPrice;
       }
+      function setTotalPrice(){
+         $this->totalPrice = $this->quantity * $this->price;
+      }
    }
 
    class SleepingBag {
@@ -251,6 +275,9 @@
       }
       function getTotalPrice(){
          return $this->totalPrice;
+      }
+      function setTotalPrice(){
+         $this->totalPrice = $this->quantity * $this->price;
       }
    }
 ?>
