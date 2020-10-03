@@ -306,7 +306,7 @@
          <div id="bannerRow" class="row">
             <div id="bannerColumn" class="col-lg-12">
                <div class="hero-image">
-                  <div class="hero-text"><h1>Your Cart</h1></div>
+                  <div class="hero-text"><h1>YOUR CART</h1></div>
                </div>
             </div>
          </div>
@@ -319,7 +319,7 @@
       <div id="info" class="container-fluid">
          <?php
             echo '<div id="infoRow" class="row">
-                     <div id="" class="col-lg-12"><div class="">Tents: ' . $_SESSION['tent']->getQuantity() . ' Item total: $' . $_SESSION['tent']->getTotalPrice() . '</div></div>
+                     <div id="" class="col-lg-12"><div class="well well-lg">Tents: ' . $_SESSION['tent']->getQuantity() . ' Item total: $' . $_SESSION['tent']->getTotalPrice() . '</div></div>
                   </div>'   
          ?>
       </div>      
