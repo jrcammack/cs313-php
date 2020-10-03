@@ -7,6 +7,12 @@
       public $price;
       public $totalPrice;
 
+      function __construct() {
+         $this->quantity = 0.0;
+         $this->price = 200.00;
+         $this->totalPrice = $this->quantity * $this->price;
+      }
+
       function getQuantity(){
          return $this->quantity;
       }
