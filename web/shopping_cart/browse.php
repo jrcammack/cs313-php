@@ -23,6 +23,16 @@
    </head>
 
    <body>
+      <?php
+         //set session variables if not set
+         if (!isset($_SESSION["cart"])){
+            $items = array();
+            $_SESSION["cart"] = $items;
+         }
+         if (!isset($_SESSION["numInCart"])){
+            $_SESSION["numInCart"] = 0;
+         }
+      ?>
       <div id="banner" class="container-fluid">
          <div id="bannerRow" class="row">
             <div id="bannerColumn" class="col-lg-12">
