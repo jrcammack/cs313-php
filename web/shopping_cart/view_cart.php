@@ -323,7 +323,7 @@
             <div id="" class="col-lg-6"><div class="well well-lg">Tents: <?php if($_SESSION['tent'] == ''){} else{echo $_SESSION['tent']->getQuantity()} ?> total: $<?php if($_SESSION['tent'] == ''){} else{echo $_SESSION['tent']->getTotalPrice()} ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
-         <div id="infoRow" class="row">
+         <!-- <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
             <div id="" class="col-lg-6"><div class="well well-lg">Camping Chairs: <?php if($_SESSION['camping chair'] == ''){} else{echo $_SESSION['camping chair']->getQuantity()} ?> total: $<?php if($_SESSION['camping chair'] == ''){} else{echo $_SESSION['camping chair']->getTotalPrice()} ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
@@ -362,7 +362,7 @@
             <div id="" class="col-lg-3"><div class=""></div></div>
             <div id="" class="col-lg-6"><div class="well well-lg">Sleeping Bags: <?php if($_SESSION['sleeping bag'] == ''){} else{echo $_SESSION['sleeping bag']->getQuantity()} ?> total: $<?php if($_SESSION['sleeping bag'] == ''){} else{echo $_SESSION['sleeping bag']->getTotalPrice()} ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
-         </div>  
+         </div>   -->
       </div>      
    </body>
 
