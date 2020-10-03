@@ -45,19 +45,19 @@
       }
 
       function getQuantity(){
-         return $this->$quantity;
+         return $this->quantity;
       }
       function setQuantity($num){
-         $this->$quantity = $num;
+         $this->quantity = $num;
       }
       function getPrice(){
-         return $this->$price;
+         return $this->price;
       }
       function setPrice($num){
-         $this->$price = $num;
+         $this->price = $num;
       }
       function getTotalPrice(){
-         return $this->$totalPrice;
+         return $this->totalPrice;
       }
       function setTotalPrice(){
          $this->totalPrice = $this->quantity * $this->price;
