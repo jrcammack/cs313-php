@@ -56,3 +56,7 @@ body {
    background-color: green;
    color: white;
 }
+
+.center {
+   text-align: center;
+}
