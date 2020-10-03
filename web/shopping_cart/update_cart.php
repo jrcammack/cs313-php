@@ -7,19 +7,19 @@
       public $price = 200.00;
       public $totalPrice = $this->quantity * $this->price;
 
-      public function getQuantity(){
+      function getQuantity(){
          return $this->quantity;
       }
-      public function setQuantity($num){
+      function setQuantity($num){
          $this->quantity = $num;
       }
-      public function getPrice(){
+      function getPrice(){
          return $this->price;
       }
-      public function setPrice($num){
+      function setPrice($num){
          $this->price = $num;
       }
-      public function getTotalPrice(){
+      function getTotalPrice(){
          return $this->totalPrice;
       }
    }
