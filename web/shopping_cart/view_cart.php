@@ -319,10 +319,49 @@
       <div id="info" class="container-fluid">
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Tents: <?php if($_SESSION['tent'] == ''){} else{echo $_SESSION['tent']->getQuantity()} ?> total: $<?php if($_SESSION['tent'] == ''){} else{echo $_SESSION['tent']->getTotalPrice()} ?></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Tents:  total: $</div></div>
+            <div id="" class="col-lg-3"><div class=""></div></div>
+         </div>
+         <div id="infoRow" class="row">
+            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Camping Chairs:  total: $</div></div>
+            <div id="" class="col-lg-3"><div class=""></div></div>
+         </div>
+         <div id="infoRow" class="row">
+            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Cookware Sets:  total: $</div></div>
+            <div id="" class="col-lg-3"><div class=""></div></div>
+         </div>
+         <div id="infoRow" class="row">
+            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Coolers:  total: $</div></div>
+            <div id="" class="col-lg-3"><div class=""></div></div>
+         </div>
+         <div id="infoRow" class="row">
+            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Flashlights:  total: $</div></div>
+            <div id="" class="col-lg-3"><div class=""></div></div>
+         </div>
+         <div id="infoRow" class="row">
+            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Hammocks:  total: $</div></div>
+            <div id="" class="col-lg-3"><div class=""></div></div>
+         </div>
+         <div id="infoRow" class="row">
+            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Hiking BackPacks:  total: $</div></div>
+            <div id="" class="col-lg-3"><div class=""></div></div>
+         </div>
+         <div id="infoRow" class="row">
+            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Mountain Bikes:  total: $</div></div>
+            <div id="" class="col-lg-3"><div class=""></div></div>
+         </div>
+         <div id="infoRow" class="row">
+            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Sleeping Bags:  total: $</div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>  
       </div>      
    </body>
-
 </html>
