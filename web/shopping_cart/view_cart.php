@@ -319,47 +319,47 @@
       <div id="info" class="container-fluid">
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg center">Tents: <?php $_SESSION['tent']->getQuantity() ?> total: $<?php $_SESSION['tent']->getTotalPrice() ?></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Tents: <?php $_SESSION['tent']->getQuantity() ?> total: $<?php $_SESSION['tent']->getTotalPrice() ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg center">Camping Chairs: <?php $_SESSION['camping chair']->getQuantity() ?> total: $<?php $_SESSION['camping chair']->getTotalPrice() ?></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Camping Chairs: <?php $_SESSION['camping chair']->getQuantity() ?> total: $<?php $_SESSION['camping chair']->getTotalPrice() ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg center">Cookware Sets: <?php $_SESSION['cookware']->getQuantity() ?> total: $<?php $_SESSION['cookware']->getTotalPrice() ?></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Cookware Sets: <?php $_SESSION['cookware']->getQuantity() ?> total: $<?php $_SESSION['cookware']->getTotalPrice() ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg center">Coolers: <?php $_SESSION['cooler']->getQuantity() ?> total: $<?php $_SESSION['cooler']->getTotalPrice() ?></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Coolers: <?php $_SESSION['cooler']->getQuantity() ?> total: $<?php $_SESSION['cooler']->getTotalPrice() ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg center">Flashlights: <?php $_SESSION['flashlight']->getQuantity() ?> total: $<?php $_SESSION['flashlight']->getTotalPrice() ?></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Flashlights: <?php $_SESSION['flashlight']->getQuantity() ?> total: $<?php $_SESSION['flashlight']->getTotalPrice() ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg center">Hammocks: <?php $_SESSION['hammock']->getQuantity() ?> total: $<?php $_SESSION['hammock']->getTotalPrice() ?></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Hammocks: <?php $_SESSION['hammock']->getQuantity() ?> total: $<?php $_SESSION['hammock']->getTotalPrice() ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg center">Hiking BackPacks: <?php $_SESSION['hiking backpack']->getQuantity() ?> total: $<?php $_SESSION['hiking backpack']->getTotalPrice() ?></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Hiking BackPacks: <?php $_SESSION['hiking backpack']->getQuantity() ?> total: $<?php $_SESSION['hiking backpack']->getTotalPrice() ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg center">Mountain Bikes: <?php $_SESSION['mountain bike']->getQuantity() ?> total: $<?php $_SESSION['mountain bike']->getTotalPrice() ?></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Mountain Bikes: <?php $_SESSION['mountain bike']->getQuantity() ?> total: $<?php $_SESSION['mountain bike']->getTotalPrice() ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg center">Sleeping Bags: <?php $_SESSION['sleeping bag']->getQuantity() ?> total: $<?php $_SESSION['sleeping bag']->getTotalPrice() ?></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Sleeping Bags: <?php $_SESSION['sleeping bag']->getQuantity() ?> total: $<?php $_SESSION['sleeping bag']->getTotalPrice() ?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>  
       </div>      
