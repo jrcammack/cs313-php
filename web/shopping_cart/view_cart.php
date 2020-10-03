@@ -319,7 +319,13 @@
       <div id="info" class="container-fluid">
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Tents:  total: $</div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Tents: 
+               <?php 
+                  if ($_SESSION["tent"] != '') {
+                     echo $_SESSION["tent"]->getQuantity();
+                  }
+               ?>  
+               total: $</div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
