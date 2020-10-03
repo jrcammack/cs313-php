@@ -34,7 +34,7 @@
       </div>
       <div id="infoRow" class="row">
          <div id="" class="col-lg-8"><div class=""></div></div>
-         <div id="infoCol1" class="col-lg-2"><div class="well well-lg">Number of Items in Cart: 0</div></div>
+         <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Number of Items in Cart: 0</div></div>
          <div id="infoCol1" class="col-lg-2"><div class=""><button class="addCart" type="button">View Cart</button></div></div>
       </div>
       <div id="info" class="container-fluid">
