@@ -3,9 +3,9 @@
    session_start();
 
    class Tent {
-      public $quantity = 0;
-      public $price = 200.00;
-      public $totalPrice = $this->quantity * $this->price;
+      public $quantity;
+      public $price;
+      public $totalPrice;
 
       function getQuantity(){
          return $this->quantity;
