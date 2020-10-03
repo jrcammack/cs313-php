@@ -44,8 +44,15 @@ body {
    padding-bottom: 50px;
 }
 
-.itemThumbnail {
-   position: absolute;
-   top: 50%;
-   left: 50%;
+.itemDescription {
+   text-align: center;   
+}
+
+.itemDescripRow {
+   margin-bottom: 150px;
+}
+
+.addCart {
+   background-color: green;
+   color: white;
 }
