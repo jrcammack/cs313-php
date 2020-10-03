@@ -34,12 +34,14 @@
       </div>
       <div id="infoRow" class="row">
          <div id="" class="col-lg-8"><div class=""></div></div>
-         <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Number of Items in Cart: 0</div></div>
+         <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Number of Items in Cart: <?php echo $_SESSION["numInCart"] ?></div></div>
          <div id="infoCol1" class="col-lg-2"><div class=""><a href="browse.php" class="btn btn-primary">Return to Browse</a></div></div>
       </div>
       <div id="info" class="container-fluid">
          <?php
-            echo "more coming soon here"
+            echo '<div id="infoRow" class="row">
+                     <div id="" class="col-lg-12"><div class="">Tents: ' . $_SESSION['tent']->getQuantity() . ' Item total: $' . $_SESSION['tent']->getTotalPrice() . '</div></div>
+                  </div>'   
          ?>
       </div>      
    </body>
