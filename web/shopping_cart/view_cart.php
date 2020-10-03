@@ -317,53 +317,7 @@
          <div id="infoCol1" class="col-lg-2"><div class=""><a href="browse.php" class="btn btn-primary">Return to Browse</a></div></div>
       </div>
       <div id="info" class="container-fluid">
-         <?php
-            echo '<div id="infoRow" class="row">
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                     <div id="" class="col-lg-6"><div class="well well-lg center">Tents: ' . $_SESSION['tent']->getQuantity() . '    total: $' . $_SESSION['tent']->getTotalPrice() . '</div></div>
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                  </div>
-                  <div id="infoRow" class="row">
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                     <div id="" class="col-lg-6"><div class="well well-lg center">Camping Chairs: ' . $_SESSION['camping chair']->getQuantity() . '    total: $' . $_SESSION['camping chair']->getTotalPrice() . '</div></div>
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                  </div>
-                  <div id="infoRow" class="row">
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                     <div id="" class="col-lg-6"><div class="well well-lg center">Cookware Sets: ' . $_SESSION['cookware']->getQuantity() . '    total: $' . $_SESSION['cookware']->getTotalPrice() . '</div></div>
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                  </div>
-                  <div id="infoRow" class="row">
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                     <div id="" class="col-lg-6"><div class="well well-lg center">Coolers: ' . $_SESSION['cooler']->getQuantity() . '    total: $' . $_SESSION['cooler']->getTotalPrice() . '</div></div>
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                  </div>
-                  <div id="infoRow" class="row">
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                     <div id="" class="col-lg-6"><div class="well well-lg center">Flashlights: ' . $_SESSION['flashlight']->getQuantity() . '    total: $' . $_SESSION['flashlight']->getTotalPrice() . '</div></div>
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                  </div>
-                  <div id="infoRow" class="row">
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                     <div id="" class="col-lg-6"><div class="well well-lg center">Hammocks: ' . $_SESSION['hammock']->getQuantity() . '    total: $' . $_SESSION['hammock']->getTotalPrice() . '</div></div>
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                  </div>
-                  <div id="infoRow" class="row">
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                     <div id="" class="col-lg-6"><div class="well well-lg center">Hiking BackPacks: ' . $_SESSION['hiking backpack']->getQuantity() . '    total: $' . $_SESSION['hiking backpack']->getTotalPrice() . '</div></div>
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                  </div>
-                  <div id="infoRow" class="row">
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                     <div id="" class="col-lg-6"><div class="well well-lg center">Mountain Bikes: ' . $_SESSION['mountain bike']->getQuantity() . '    total: $' . $_SESSION['mountain bike']->getTotalPrice() . '</div></div>
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                  </div>
-                  <div id="infoRow" class="row">
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                     <div id="" class="col-lg-6"><div class="well well-lg center">Sleeping Bags: ' . $_SESSION['sleeping bag']->getQuantity() . '    total: $' . $_SESSION['sleeping bag']->getTotalPrice() . '</div></div>
-                     <div id="" class="col-lg-3"><div class=""></div></div>
-                  </div>'   
-         ?>
+         
       </div>      
    </body>
 
