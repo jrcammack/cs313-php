@@ -1,3 +1,8 @@
+<?php
+   //start the session
+   session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +10,7 @@
       <title>Yukon Outfitters</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script type="text/javascript" src="../homeJS.js"></script>
+      <script type="text/javascript" src="shopping_cartJS.js"></script>
       <!-- jQuery Library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -47,11 +52,11 @@
          <div id="infoRow" class="row itemDescripRow">
             <div id="" class="col-lg-1"><div class=""></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
-            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">TENT $200.00<br><br><button class="addCart" type="button">Add to Cart</button></div></div>
+            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">TENT $200.00<br><br><button onclick="addToCart('tent')" class="addCart" type="button">Add to Cart</button></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
-            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">CAMPING CHAIR $50.00<br><br><button class="addCart" type="button">Add to Cart</button></div></div>
+            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">CAMPING CHAIR $50.00<br><br><button onclick="addToCart('camping chair')" class="addCart" type="button">Add to Cart</button></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
-            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">COOKWARE $20.00<br><br><button class="addCart" type="button">Add to Cart</button></div></div>
+            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">COOKWARE $20.00<br><br><button onclick="addToCart('cookware')" class="addCart" type="button">Add to Cart</button></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
          </div>
@@ -69,11 +74,11 @@
          <div id="infoRow" class="row itemDescripRow">
             <div id="" class="col-lg-1"><div class=""></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
-            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">COOLER $40.00<br><br><button class="addCart" type="button">Add to Cart</button></div></div>
+            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">COOLER $40.00<br><br><button onclick="addToCart('cooler')" class="addCart" type="button">Add to Cart</button></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
-            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">FLASHLIGHT $10.00<br><br><button class="addCart" type="button">Add to Cart</button></div></div>
+            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">FLASHLIGHT $10.00<br><br><button onclick="addToCart('flashlight')" class="addCart" type="button">Add to Cart</button></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
-            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">HAMMOCK $75.00<br><br><button class="addCart" type="button">Add to Cart</button></div></div>
+            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">HAMMOCK $75.00<br><br><button onclick="addToCart('hammock')" class="addCart" type="button">Add to Cart</button></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
          </div>
@@ -91,11 +96,11 @@
          <div id="infoRow" class="row itemDescripRow">
             <div id="" class="col-lg-1"><div class=""></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
-            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">HIKING BACKPACK $100.00<br><br><button class="addCart" type="button">Add to Cart</button></div></div>
+            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">HIKING BACKPACK $100.00<br><br><button onclick="addToCart('hiking backpack')" class="addCart" type="button">Add to Cart</button></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
-            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">MOUNTAIN BIKE $250.00<br><br><button class="addCart" type="button">Add to Cart</button></div></div>
+            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">MOUNTAIN BIKE $250.00<br><br><button onclick="addToCart('mountain bike')" class="addCart" type="button">Add to Cart</button></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
-            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">SLEEPING BAG $90.00<br><br><button class="addCart" type="button">Add to Cart</button></div></div>
+            <div id="infoCol1" class="col-lg-2"><div class="itemDescription">SLEEPING BAG $90.00<br><br><button onclick="addToCart('sleeping bag')" class="addCart" type="button">Add to Cart</button></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
             <div id="" class="col-lg-1"><div class=""></div></div>
          </div>
