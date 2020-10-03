@@ -2,27 +2,27 @@
    //start the session
    session_start();
 
-   // class Tent {
-   //    public $quantity = 0;
-   //    public $price = 200.00;
-   //    public $totalPrice = $quantity * $price;
+   class Tent {
+      public $quantity = 0;
+      public $price = 200.00;
+      public $totalPrice = $quantity * $price;
 
-   //    public function getQuantity(){
-   //       return $this->$quantity;
-   //    }
-   //    public function setQuantity($num){
-   //       $this->$quantity = $num;
-   //    }
-   //    public function getPrice(){
-   //       return $this->$price;
-   //    }
-   //    public function setPrice($num){
-   //       $this->$price = $num;
-   //    }
-   //    public function getTotalPrice(){
-   //       return $this->$totalPrice;
-   //    }
-   // }
+      public function getQuantity(){
+         return $this->$quantity;
+      }
+      public function setQuantity($num){
+         $this->$quantity = $num;
+      }
+      public function getPrice(){
+         return $this->$price;
+      }
+      public function setPrice($num){
+         $this->$price = $num;
+      }
+      public function getTotalPrice(){
+         return $this->$totalPrice;
+      }
+   }
 
    // class CampingChair {
    //    public $quantity = 0;
