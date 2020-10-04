@@ -312,9 +312,10 @@
          </div>
       </div>
       <div id="infoRow" class="row">
-         <div id="" class="col-lg-8"><div class=""></div></div>
+         <div id="" class="col-lg-6"><div class=""></div></div>
          <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Number of Items in Cart: <?php echo $_SESSION["numInCart"] ?></div></div>
          <div id="infoCol1" class="col-lg-2"><div class=""><a href="browse.php" class="btn btn-primary">Return to Browse</a></div></div>
+         <div id="infoCol1" class="col-lg-2"><div class=""><a href="checkout.php" class="btn btn-primary">Checkout</a></div></div>
       </div>
       <div id="info" class="container-fluid">
          <div id="infoRow" class="row">
