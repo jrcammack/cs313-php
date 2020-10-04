@@ -57,6 +57,11 @@ body {
    color: white;
 }
 
+.removeCart {
+   background-color: red;
+   color: white;
+}
+
 .center {
    text-align: center;
 }

@@ -319,48 +319,57 @@
       <div id="info" class="container-fluid">
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Tents: <?php if ($_SESSION["tent"] != '') {echo $_SESSION["tent"]->getQuantity();}?>  total: $<?php if ($_SESSION["tent"] != '') {echo $_SESSION["tent"]->getTotalPrice();}?></div></div>
-            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Tents: <?php if ($_SESSION["tent"] != '') {echo $_SESSION["tent"]->getQuantity();} else{echo 0;}?>  total: $<?php if ($_SESSION["tent"] != '') {echo $_SESSION["tent"]->getTotalPrice();} else{echo 0;}?></div></div>
+            <div id="" class="col-lg-1"><div class=""><button onclick="removeFromCart('tent')" class="removeCart" type="button">Remove from Cart</button></div></div>
+            <div id="" class="col-lg-2"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Camping Chairs: <?php if ($_SESSION["camping chair"] != '') {echo $_SESSION["camping chair"]->getQuantity();}?>  total: $<?php if ($_SESSION["camping chair"] != '') {echo $_SESSION["camping chair"]->getTotalPrice();}?></div></div>
-            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Camping Chairs: <?php if ($_SESSION["camping chair"] != '') {echo $_SESSION["camping chair"]->getQuantity();} else{echo 0;}?>  total: $<?php if ($_SESSION["camping chair"] != '') {echo $_SESSION["camping chair"]->getTotalPrice();} else{echo 0;}?></div></div>
+            <div id="" class="col-lg-1"><div class=""><button onclick="removeFromCart('camping chair')" class="removeCart" type="button">Remove from Cart</button></div></div>
+            <div id="" class="col-lg-2"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Cookware Sets: <?php if ($_SESSION["cookware"] != '') {echo $_SESSION["cookware"]->getQuantity();}?>  total: $<?php if ($_SESSION["cookware"] != '') {echo $_SESSION["cookware"]->getTotalPrice();}?></div></div>
-            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Cookware Sets: <?php if ($_SESSION["cookware"] != '') {echo $_SESSION["cookware"]->getQuantity();} else{echo 0;}?>  total: $<?php if ($_SESSION["cookware"] != '') {echo $_SESSION["cookware"]->getTotalPrice();} else{echo 0;}?></div></div>
+            <div id="" class="col-lg-1"><div class=""><button onclick="removeFromCart('cookware')" class="removeCart" type="button">Remove from Cart</button></div></div>
+            <div id="" class="col-lg-2"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Coolers: <?php if ($_SESSION["cooler"] != '') {echo $_SESSION["cooler"]->getQuantity();}?>  total: $<?php if ($_SESSION["cooler"] != '') {echo $_SESSION["cooler"]->getTotalPrice();}?></div></div>
-            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Coolers: <?php if ($_SESSION["cooler"] != '') {echo $_SESSION["cooler"]->getQuantity();} else{echo 0;}?>  total: $<?php if ($_SESSION["cooler"] != '') {echo $_SESSION["cooler"]->getTotalPrice();} else{echo 0;}?></div></div>
+            <div id="" class="col-lg-1"><div class=""><button onclick="removeFromCart('cooler')" class="removeCart" type="button">Remove from Cart</button></div></div>
+            <div id="" class="col-lg-2"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Flashlights: <?php if ($_SESSION["flashlight"] != '') {echo $_SESSION["flashlight"]->getQuantity();}?>  total: $<?php if ($_SESSION["flashlight"] != '') {echo $_SESSION["flashlight"]->getTotalPrice();}?></div></div>
-            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Flashlights: <?php if ($_SESSION["flashlight"] != '') {echo $_SESSION["flashlight"]->getQuantity();} else{echo 0;}?>  total: $<?php if ($_SESSION["flashlight"] != '') {echo $_SESSION["flashlight"]->getTotalPrice();} else{echo 0;}?></div></div>
+            <div id="" class="col-lg-1"><div class=""><button onclick="removeFromCart('flashlight')" class="removeCart" type="button">Remove from Cart</button></div></div>
+            <div id="" class="col-lg-2"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Hammocks: <?php if ($_SESSION["hammock"] != '') {echo $_SESSION["hammock"]->getQuantity();}?>  total: $<?php if ($_SESSION["hammock"] != '') {echo $_SESSION["hammock"]->getTotalPrice();}?></div></div>
-            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Hammocks: <?php if ($_SESSION["hammock"] != '') {echo $_SESSION["hammock"]->getQuantity();} else{echo 0;}?>  total: $<?php if ($_SESSION["hammock"] != '') {echo $_SESSION["hammock"]->getTotalPrice();} else{echo 0;}?></div></div>
+            <div id="" class="col-lg-1"><div class=""><button onclick="removeFromCart('hammock')" class="removeCart" type="button">Remove from Cart</button></div></div>
+            <div id="" class="col-lg-2"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Hiking BackPacks: <?php if ($_SESSION["hiking backpack"] != '') {echo $_SESSION["hiking backpack"]->getQuantity();}?>  total: $<?php if ($_SESSION["hiking backpack"] != '') {echo $_SESSION["hiking backpack"]->getTotalPrice();}?></div></div>
-            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Hiking BackPacks: <?php if ($_SESSION["hiking backpack"] != '') {echo $_SESSION["hiking backpack"]->getQuantity();} else{echo 0;}?>  total: $<?php if ($_SESSION["hiking backpack"] != '') {echo $_SESSION["hiking backpack"]->getTotalPrice();} else{echo 0;}?></div></div>
+            <div id="" class="col-lg-1"><div class=""><button onclick="removeFromCart('hiking backpack')" class="removeCart" type="button">Remove from Cart</button></div></div>
+            <div id="" class="col-lg-2"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Mountain Bikes: <?php if ($_SESSION["mountain bike"] != '') {echo $_SESSION["mountain bike"]->getQuantity();}?>  total: $<?php if ($_SESSION["mountain bike"] != '') {echo $_SESSION["mountain bike"]->getTotalPrice();}?></div></div>
-            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Mountain Bikes: <?php if ($_SESSION["mountain bike"] != '') {echo $_SESSION["mountain bike"]->getQuantity();} else{echo 0;}?>  total: $<?php if ($_SESSION["mountain bike"] != '') {echo $_SESSION["mountain bike"]->getTotalPrice();} else{echo 0;}?></div></div>
+            <div id="" class="col-lg-1"><div class=""><button onclick="removeFromCart('mountain bike')" class="removeCart" type="button">Remove from Cart</button></div></div>
+            <div id="" class="col-lg-2"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Sleeping Bags: <?php if ($_SESSION["sleeping bag"] != '') {echo $_SESSION["sleeping bag"]->getQuantity();}?>  total: $<?php if ($_SESSION["sleeping bag"] != '') {echo $_SESSION["sleeping bag"]->getTotalPrice();}?></div></div>
-            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Sleeping Bags: <?php if ($_SESSION["sleeping bag"] != '') {echo $_SESSION["sleeping bag"]->getQuantity();} else{echo 0;}?>  total: $<?php if ($_SESSION["sleeping bag"] != '') {echo $_SESSION["sleeping bag"]->getTotalPrice();} else{echo 0;}?></div></div>
+            <div id="" class="col-lg-1"><div class=""><button onclick="removeFromCart('sleeping bag')" class="removeCart" type="button">Remove from Cart</button></div></div>
+            <div id="" class="col-lg-2"><div class=""></div></div>
          </div>  
       </div>      
    </body>
