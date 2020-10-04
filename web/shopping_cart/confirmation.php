@@ -353,7 +353,7 @@
          <div id="bannerRow" class="row">
             <div id="bannerColumn" class="col-lg-12">
                <div class="hero-image">
-                  <div class="hero-text"><h1>CHECKOUT</h1></div>
+                  <div class="hero-text"><h1>ORDER CONFIRMATION</h1></div>
                </div>
             </div>
          </div>
