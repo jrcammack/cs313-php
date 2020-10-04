@@ -364,16 +364,55 @@
          <div id="infoCol1" class="col-lg-3"><div id="numInCart" class="well well-lg">Number of Items in Cart: <?php echo $_SESSION["numInCart"] ?></div></div>
       </div>
       <div id="info" class="container-fluid">
-      <div id="" class="col-lg-5"><div class=""></div></div>
-         <div id="" class="col-lg-2">
-            <div class="well well-lg">
-                  Order Confirmed for Address:<br>
-                  <?php echo $street ?><br>
-                  <?php echo $city ?><br> 
-                  <?php echo $state ?><br>
-                  <?php echo $zip ?>
-         </div> 
-         <div id="" class="col-lg-5"><div class=""></div></div>   
+         <div id="" class="col-lg-5"><div class=""></div></div>
+            <div id="" class="col-lg-2">
+               <div class="well well-lg">
+                     Order Confirmed for Address:<br>
+                     <?php echo $street ?><br>
+                     <?php echo $city ?><br> 
+                     <?php echo $state ?><br>
+                     <?php echo $zip ?>
+               </div>      
+            </div> 
+         <div id="" class="col-lg-5"><div class=""></div></div>
+         <div id="infoRow" class="row">
+            <div id="" class="col-lg-3"><div class=""></div></div>
+            <div id="infoCol1" class="col-lg-6">
+               <div id="" class="well well-lg">
+                  <?php 
+                     echo ("items purchased: <br>");
+                     if ($_SESSION["tent"]->getQuantity() > 0) {
+                        echo ("Tents: " . $_SESSION["tent"]->getQuantity());
+                     }
+                     if ($_SESSION["camping chair"]->getQuantity() > 0) {
+                        echo ("Camping Chairs: " . $_SESSION["camping chair"]->getQuantity());
+                     }
+                     if ($_SESSION["cookware"]->getQuantity() > 0) {
+                        echo ("Cookware Sets: " . $_SESSION["cookware"]->getQuantity());
+                     }
+                     if ($_SESSION["cooler"]->getQuantity() > 0) {
+                        echo ("Coolers: " . $_SESSION["cooler"]->getQuantity());
+                     }
+                     if ($_SESSION["flashlight"]->getQuantity() > 0) {
+                        echo ("Flashlights: " . $_SESSION["flashlight"]->getQuantity());
+                     }
+                     if ($_SESSION["hammock"]->getQuantity() > 0) {
+                        echo ("Hammocks: " . $_SESSION["hammock"]->getQuantity());
+                     }
+                     if ($_SESSION["hiking backpack"]->getQuantity() > 0) {
+                        echo ("Hiking Backpaks: " . $_SESSION["hiking backpack"]->getQuantity());
+                     }
+                     if ($_SESSION["mountain bike"]->getQuantity() > 0) {
+                        echo ("Mountain Bikes: " . $_SESSION["mountain bike"]->getQuantity());
+                     }
+                     if ($_SESSION["sleeping bag"]->getQuantity() > 0) {
+                        echo ("Sleeping Bags: " . $_SESSION["sleeping bag"]->getQuantity());
+                     }
+                  ?>
+               </div>
+            </div>
+            <div id="infoCol1" class="col-lg-3"><div id="" class=""></div></div>
+         </div>   
       </div>      
    </body>
 </html>
