@@ -285,7 +285,7 @@
          $_SESSION["order total"] += $_SESSION["tent"]->getTotalPrice();
       }
       if ($_SESSION["camping chair"] != '') {
-         $_SESSION["order total"] += $_SESSION["camping chair"]->getTotalPrice());
+         $_SESSION["order total"] += $_SESSION["camping chair"]->getTotalPrice();
       }
       if ($_SESSION["cookware"] != '') {
          $_SESSION["order total"] += $_SESSION["cookware"]->getTotalPrice();
