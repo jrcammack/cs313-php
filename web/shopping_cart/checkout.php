@@ -280,15 +280,34 @@
             $this->totalPrice = $this->quantity * $this->price;
          }
       }
-      $orderTotal = $_SESSION["tent"]->getTotalPrice() + 
-         $_SESSION["camping chair"]->getTotalPrice() + 
-         $_SESSION["cookware"]->getTotalPrice() + 
-         $_SESSION["cooler"]->getTotalPrice() + 
-         $_SESSION["flashlight"]->getTotalPrice() + 
-         $_SESSION["hammock"]->getTotalPrice() + 
-         $_SESSION["hiking backpack"]->getTotalPrice() + 
-         $_SESSION["mountain bike"]->getTotalPrice() + 
-         $_SESSION["sleeping bag"]->getTotalPrice();
+ 
+      if ($_SESSION["tent"] != '') {
+         $_SESSION["order total"] += $_SESSION["tent"]->getTotalPrice();
+      }
+      if ($_SESSION["camping chair"] != '') {
+         $_SESSION["order total"] += $_SESSION["camping chair"]->getTotalPrice());
+      }
+      if ($_SESSION["cookware"] != '') {
+         $_SESSION["order total"] += $_SESSION["cookware"]->getTotalPrice();
+      }
+      if ($_SESSION["cooler"] != '') {
+         $_SESSION["order total"] += $_SESSION["cooler"]->getTotalPrice();
+      }
+      if ($_SESSION["flashlight"] != '') {
+         $_SESSION["order total"] += $_SESSION["flashlight"]->getTotalPrice();
+      }
+      if ($_SESSION["hammock"] != '') {
+         $_SESSION["order total"] += $_SESSION["hammock"]->getTotalPrice();
+      }
+      if ($_SESSION["hiking backpack"] != '') {
+         $_SESSION["order total"] += $_SESSION["hiking backpack"]->getTotalPrice();
+      }
+      if ($_SESSION["mountain bike"] != '') {
+         $_SESSION["order total"] += $_SESSION["mountain bike"]->getTotalPrice();
+      }
+      if ($_SESSION["sleeping bag"] != '') {
+         $_SESSION["order total"] += $_SESSION["sleeping bag"]->getTotalPrice();
+      }       
 ?>
 
 <!DOCTYPE html>
@@ -322,7 +341,7 @@
       </div>
       <div id="infoRow" class="row">
          <div id="" class="col-lg-6"><div class=""></div></div>
-         <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Total: $<?php echo ($orderTotal); ?></div></div>
+         <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Total: $<?php echo $_SESSION["order total"] ?></div></div>
          <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Number of Items in Cart: <?php echo $_SESSION["numInCart"] ?></div></div>
          <div id="infoCol1" class="col-lg-2"><div class=""><a href="view_cart.php" class="btn btn-primary">Return to Cart</a></div></div>
       </div>

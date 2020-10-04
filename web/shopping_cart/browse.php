@@ -55,6 +55,9 @@
          if (!isset($_SESSION["numInCart"])){
             $_SESSION["numInCart"] = 0;
          }
+         if (!isset($_SESSION["order total"])) {
+            $_SESSION["order total"] = 0.0;
+         }
       ?>
       <div id="banner" class="container-fluid">
          <div id="bannerRow" class="row">
