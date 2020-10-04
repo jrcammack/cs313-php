@@ -280,6 +280,7 @@
             $this->totalPrice = $this->quantity * $this->price;
          }
       }
+      $_SESSION["order total"] = 0.0;
  
       if ($_SESSION["tent"] != '') {
          $_SESSION["order total"] += $_SESSION["tent"]->getTotalPrice();
