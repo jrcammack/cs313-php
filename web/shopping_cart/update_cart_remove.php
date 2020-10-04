@@ -286,6 +286,7 @@
    //get counter and increment 1
    $currentCounter = $_SESSION["numInCart"];
    $newCounter = $currentCounter - 1;
+   $_SESSION["numInCart"] = $newCounter;
 
    //get product to be added
    $productToRemove = $_GET["product"];
@@ -374,8 +375,6 @@
          }
          break;     
    }
-
-   $_SESSION["numInCart"] = $newCounter;
    
    echo $_SESSION["numInCart"];
 ?>
