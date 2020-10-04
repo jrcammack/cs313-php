@@ -351,10 +351,10 @@
          <div id="" class="col-lg-2">
             <div class="well well-lg">
                <form method="POST" action="confirmation.php" id="completionForm">
-                  Steet:<input type="text" name="street"><br>
-                  City:<input type="text" name="city"><br>
-                  State:<input type="text" name="state"><br>
-                  Zip Code:<input type="text" name="zip"><br>
+                  Steet:<br><input type="text" name="street"><br>
+                  City:<br><input type="text" name="city"><br>
+                  State:<br><input type="text" name="state"><br>
+                  Zip Code:<br><input type="text" name="zip"><br>
                   <button type="submit">Confirm Purchase</button>
                </form>
             </div>
