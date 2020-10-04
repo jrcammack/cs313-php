@@ -18,6 +18,6 @@ function addToCart(value) {
       document.getElementById("numInCart").innerHTML = "Number of Items in Cart: " + this.responseText;
      }
    };
-   xhttp.open("GET", "update_cart.php?product=" + value, true);
+   xhttp.open("GET", "update_cart_remove.php?product=" + value, true);
    xhttp.send();
  }
