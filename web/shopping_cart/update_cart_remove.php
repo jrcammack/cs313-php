@@ -285,8 +285,14 @@
 
    //get counter and increment 1
    $currentCounter = $_SESSION["numInCart"];
-   $newCounter = $currentCounter - 1;
-   $_SESSION["numInCart"] = $newCounter;
+   if ($currentCounter == 0) {
+         
+   }
+   else {
+      $newCounter = $currentCounter - 1;
+      $_SESSION["numInCart"] = $newCounter;
+   }
+   
 
    //get product to be added
    $productToRemove = $_GET["product"];
@@ -298,8 +304,13 @@
             
          }
          else {
-            $_SESSION["tent"]->setQuantity($_SESSION['tent']->getQuantity() - 1);
-            $_SESSION["tent"]->setTotalPrice();
+            if ($_SESSION['tent']->getQuantity() == 0) {
+
+            }
+            else {
+               $_SESSION["tent"]->setQuantity($_SESSION['tent']->getQuantity() - 1);
+               $_SESSION["tent"]->setTotalPrice();
+            }
          }
          break;
       case 'camping chair':
@@ -307,8 +318,13 @@
             
          }
          else {
-            $_SESSION["camping chair"]->setQuantity($_SESSION['camping chair']->getQuantity() - 1);
-            $_SESSION["camping chair"]->setTotalPrice();
+            if ($_SESSION['camping chair']->getQuantity() == 0) {
+               
+            }
+            else {
+               $_SESSION["camping chair"]->setQuantity($_SESSION['camping chair']->getQuantity() - 1);
+               $_SESSION["camping chair"]->setTotalPrice();
+            }
          }
          break;
       case 'cookware':
@@ -316,8 +332,13 @@
             
          }
          else {
-            $_SESSION["cookware"]->setQuantity($_SESSION['cookware']->getQuantity() - 1);
-            $_SESSION["cookware"]->setTotalPrice();
+            if ($_SESSION['cookware']->getQuantity() == 0) {
+               
+            }
+            else {
+               $_SESSION["cookware"]->setQuantity($_SESSION['cookware']->getQuantity() - 1);
+               $_SESSION["cookware"]->setTotalPrice();
+            }
          }
          break;
       case 'cooler':
@@ -325,8 +346,13 @@
             
          }
          else {
-            $_SESSION["cooler"]->setQuantity($_SESSION['cooler']->getQuantity() - 1);
-            $_SESSION["cooler"]->setTotalPrice();
+            if ($_SESSION['cooler']->getQuantity() == 0) {
+               
+            }
+            else {
+               $_SESSION["cooler"]->setQuantity($_SESSION['cooler']->getQuantity() - 1);
+               $_SESSION["cooler"]->setTotalPrice();
+            }
          }
          break;
       case 'flashlight':
@@ -334,8 +360,13 @@
             
          }
          else {
-            $_SESSION["flashlight"]->setQuantity($_SESSION['flashlight']->getQuantity() - 1);
-            $_SESSION["flashlight"]->setTotalPrice();
+            if ($_SESSION['flashlight']->getQuantity() == 0) {
+               
+            }
+            else {
+               $_SESSION["flashlight"]->setQuantity($_SESSION['flashlight']->getQuantity() - 1);
+               $_SESSION["flashlight"]->setTotalPrice();
+            }
          }
          break;
       case 'hammock':
@@ -343,8 +374,13 @@
             
          }
          else {
-            $_SESSION["hammock"]->setQuantity($_SESSION['hammock']->getQuantity() - 1);
-            $_SESSION["hammock"]->setTotalPrice();
+            if ($_SESSION['hammock']->getQuantity() == 0) {
+               
+            }
+            else {
+               $_SESSION["hammock"]->setQuantity($_SESSION['hammock']->getQuantity() - 1);
+               $_SESSION["hammock"]->setTotalPrice();
+            }
          }
          break;
       case 'hiking backpack':
@@ -352,8 +388,13 @@
             
          }
          else {
-            $_SESSION["hiking backpack"]->setQuantity($_SESSION['hiking backpack']->getQuantity() - 1);
-            $_SESSION["hiking backpack"]->setTotalPrice();
+            if ($_SESSION['hiking backpack']->getQuantity() == 0) {
+               
+            }
+            else {
+               $_SESSION["hiking backpack"]->setQuantity($_SESSION['hiking backpack']->getQuantity() - 1);
+               $_SESSION["hiking backpack"]->setTotalPrice();
+            }
          }
          break;
       case 'mountain bike':
@@ -361,8 +402,13 @@
             
          }
          else {
-            $_SESSION["mountain bike"]->setQuantity($_SESSION['mountain bike']->getQuantity() - 1);
-            $_SESSION["mountain bike"]->setTotalPrice();
+            if ($_SESSION['mountain bike']->getQuantity() == 0) {
+               
+            }
+            else {
+               $_SESSION["mountain bike"]->setQuantity($_SESSION['mountain bike']->getQuantity() - 1);
+               $_SESSION["mountain bike"]->setTotalPrice();
+            }
          }
          break;
       case 'sleeping bag':
@@ -370,8 +416,13 @@
             
          }
          else {
-            $_SESSION["sleeping bag"]->setQuantity($_SESSION['sleeping bag']->getQuantity() - 1);
-            $_SESSION["sleeping bag"]->setTotalPrice();
+            if ($_SESSION['sleeping bag']->getQuantity() == 0) {
+               
+            }
+            else {
+               $_SESSION["sleeping bag"]->setQuantity($_SESSION['sleeping bag']->getQuantity() - 1);
+               $_SESSION["sleeping bag"]->setTotalPrice();
+            }
          }
          break;     
    }
