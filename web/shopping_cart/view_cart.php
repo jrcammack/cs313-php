@@ -319,53 +319,47 @@
       <div id="info" class="container-fluid">
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Tents: 
-               <?php 
-                  if ($_SESSION["tent"] != '') {
-                     echo $_SESSION["tent"]->getQuantity();
-                  }
-               ?>  
-               total: $</div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Tents: <?php if ($_SESSION["tent"] != '') {echo $_SESSION["tent"]->getQuantity();}?>  total: $<?php if ($_SESSION["tent"] != '') {echo $_SESSION["tent"]->getTotalPrice();}?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Camping Chairs:  total: $</div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Camping Chairs: <?php if ($_SESSION["camping chair"] != '') {echo $_SESSION["camping chair"]->getQuantity();}?>  total: $<?php if ($_SESSION["camping chair"] != '') {echo $_SESSION["camping chair"]->getTotalPrice();}?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Cookware Sets:  total: $</div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Cookware Sets: <?php if ($_SESSION["cookware"] != '') {echo $_SESSION["cookware"]->getQuantity();}?>  total: $<?php if ($_SESSION["cookware"] != '') {echo $_SESSION["cookware"]->getTotalPrice();}?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Coolers:  total: $</div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Coolers: <?php if ($_SESSION["cooler"] != '') {echo $_SESSION["cooler"]->getQuantity();}?>  total: $<?php if ($_SESSION["cooler"] != '') {echo $_SESSION["cooler"]->getTotalPrice();}?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Flashlights:  total: $</div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Flashlights: <?php if ($_SESSION["flashlight"] != '') {echo $_SESSION["flashlight"]->getQuantity();}?>  total: $<?php if ($_SESSION["flashlight"] != '') {echo $_SESSION["flashlight"]->getTotalPrice();}?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Hammocks:  total: $</div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Hammocks: <?php if ($_SESSION["hammock"] != '') {echo $_SESSION["hammock"]->getQuantity();}?>  total: $<?php if ($_SESSION["hammock"] != '') {echo $_SESSION["hammock"]->getTotalPrice();}?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Hiking BackPacks:  total: $</div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Hiking BackPacks: <?php if ($_SESSION["hiking backpack"] != '') {echo $_SESSION["hiking backpack"]->getQuantity();}?>  total: $<?php if ($_SESSION["hiking backpack"] != '') {echo $_SESSION["hiking backpack"]->getTotalPrice();}?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Mountain Bikes:  total: $</div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Mountain Bikes: <?php if ($_SESSION["mountain bike"] != '') {echo $_SESSION["mountain bike"]->getQuantity();}?>  total: $<?php if ($_SESSION["mountain bike"] != '') {echo $_SESSION["mountain bike"]->getTotalPrice();}?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="" class="col-lg-6"><div class="well well-lg">Sleeping Bags:  total: $</div></div>
+            <div id="" class="col-lg-6"><div class="well well-lg">Sleeping Bags: <?php if ($_SESSION["sleeping bag"] != '') {echo $_SESSION["sleeping bag"]->getQuantity();}?>  total: $<?php if ($_SESSION["sleeping bag"] != '') {echo $_SESSION["sleeping bag"]->getTotalPrice();}?></div></div>
             <div id="" class="col-lg-3"><div class=""></div></div>
          </div>  
       </div>      
