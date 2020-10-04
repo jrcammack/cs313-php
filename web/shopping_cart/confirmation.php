@@ -378,8 +378,8 @@
             <div id="" class="col-lg-5"><div class=""></div></div>
          </div>   
          <div id="infoRow" class="row">
-            <div id="" class="col-lg-3"><div class=""></div></div>
-            <div id="infoCol1" class="col-lg-6">
+            <div id="" class="col-lg-5"><div class=""></div></div>
+            <div id="infoCol1" class="col-lg-2">
                <div id="" class="well well-lg">
                   <?php 
                      echo ("items purchased: <br>");
@@ -413,7 +413,7 @@
                   ?>
                </div>
             </div>
-            <div id="infoCol1" class="col-lg-3"><div id="" class=""></div></div>
+            <div id="infoCol1" class="col-lg-5"><div id="" class=""></div></div>
          </div>   
       </div>      
    </body>
