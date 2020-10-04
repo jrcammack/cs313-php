@@ -364,17 +364,19 @@
          <div id="infoCol1" class="col-lg-3"><div id="numInCart" class="well well-lg">Number of Items in Cart: <?php echo $_SESSION["numInCart"] ?></div></div>
       </div>
       <div id="info" class="container-fluid">
-         <div id="" class="col-lg-5"><div class=""></div></div>
-            <div id="" class="col-lg-2">
-               <div class="well well-lg">
-                     Order Confirmed for Address:<br>
-                     <?php echo $street ?><br>
-                     <?php echo $city ?><br> 
-                     <?php echo $state ?><br>
-                     <?php echo $zip ?>
-               </div>      
-            </div> 
-         <div id="" class="col-lg-5"><div class=""></div></div>
+         <div id="infoRow" class="row">
+            <div id="" class="col-lg-5"><div class=""></div></div>
+               <div id="" class="col-lg-2">
+                  <div class="well well-lg">
+                        Order Confirmed for Address:<br>
+                        <?php echo $street ?><br>
+                        <?php echo $city ?><br> 
+                        <?php echo $state ?><br>
+                        <?php echo $zip ?>
+                  </div>      
+               </div>       
+            <div id="" class="col-lg-5"><div class=""></div></div>
+         </div>   
          <div id="infoRow" class="row">
             <div id="" class="col-lg-3"><div class=""></div></div>
             <div id="infoCol1" class="col-lg-6">
