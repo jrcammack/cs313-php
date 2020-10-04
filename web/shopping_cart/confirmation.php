@@ -383,31 +383,31 @@
                <div id="" class="well well-lg">
                   <?php 
                      echo ("items purchased: <br>");
-                     if ($_SESSION["tent"]->getQuantity() > 0) {
+                     if ($_SESSION["tent"] != '' and $_SESSION["tent"]->getQuantity() > 0) {
                         echo ("Tents: " . $_SESSION["tent"]->getQuantity() . "<br>");
                      }
-                     if ($_SESSION["camping chair"]->getQuantity() > 0) {
+                     if ($_SESSION["camping chair"] != '' and $_SESSION["camping chair"]->getQuantity() > 0) {
                         echo ("Camping Chairs: " . $_SESSION["camping chair"]->getQuantity() . "<br>");
                      }
-                     if ($_SESSION["cookware"]->getQuantity() > 0) {
+                     if ($_SESSION["cookware"] != '' and $_SESSION["cookware"]->getQuantity() > 0) {
                         echo ("Cookware Sets: " . $_SESSION["cookware"]->getQuantity() . "<br>");
                      }
-                     if ($_SESSION["cooler"]->getQuantity() > 0) {
+                     if ($_SESSION["cooler"] != '' and $_SESSION["cooler"]->getQuantity() > 0) {
                         echo ("Coolers: " . $_SESSION["cooler"]->getQuantity() . "<br>");
                      }
-                     if ($_SESSION["flashlight"]->getQuantity() > 0) {
+                     if ($_SESSION["flashlight"] != '' and $_SESSION["flashlight"]->getQuantity() > 0) {
                         echo ("Flashlights: " . $_SESSION["flashlight"]->getQuantity() . "<br>");
                      }
-                     if ($_SESSION["hammock"]->getQuantity() > 0) {
+                     if ($_SESSION["hammock"] != '' and $_SESSION["hammock"]->getQuantity() > 0) {
                         echo ("Hammocks: " . $_SESSION["hammock"]->getQuantity() . "<br>");
                      }
-                     if ($_SESSION["hiking backpack"]->getQuantity() > 0) {
+                     if ($_SESSION["hiking backpack"] != '' and $_SESSION["hiking backpack"]->getQuantity() > 0) {
                         echo ("Hiking Backpaks: " . $_SESSION["hiking backpack"]->getQuantity() . "<br>");
                      }
-                     if ($_SESSION["mountain bike"]->getQuantity() > 0) {
+                     if ($_SESSION["mountain bike"] != '' and $_SESSION["mountain bike"]->getQuantity() > 0) {
                         echo ("Mountain Bikes: " . $_SESSION["mountain bike"]->getQuantity() . "<br>");
                      }
-                     if ($_SESSION["sleeping bag"]->getQuantity() > 0) {
+                     if ($_SESSION["sleeping bag"] != '' and $_SESSION["sleeping bag"]->getQuantity() > 0) {
                         echo ("Sleeping Bags: " . $_SESSION["sleeping bag"]->getQuantity() . "<br>");
                      }
                   ?>
