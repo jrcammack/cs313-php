@@ -280,6 +280,15 @@
             $this->totalPrice = $this->quantity * $this->price;
          }
       }
+      $orderTotal = $_SESSION["tent"]->getTotalPrice() + 
+         $_SESSION["camping chair"]->getTotalPrice() + 
+         $_SESSION["cookware"]->getTotalPrice() + 
+         $_SESSION["cooler"]->getTotalPrice() + 
+         $_SESSION["flashlight"]->getTotalPrice() + 
+         $_SESSION["hammock"]->getTotalPrice() + 
+         $_SESSION["hiking backpack"]->getTotalPrice() + 
+         $_SESSION["mountain bike"]->getTotalPrice() + 
+         $_SESSION["sleeping bag"]->getTotalPrice();
 ?>
 
 <!DOCTYPE html>
@@ -313,7 +322,7 @@
       </div>
       <div id="infoRow" class="row">
          <div id="" class="col-lg-6"><div class=""></div></div>
-         <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Total: $<?php echo ($_SESSION["tent"]->getTotalPrice() + $_SESSION["camping chair"]->getTotalPrice() + $_SESSION["cookware"]->getTotalPrice() + $_SESSION["cooler"]->getTotalPrice() + $_SESSION["flashlight"]->getTotalPrice() + $_SESSION["hammock"]->getTotalPrice() + $_SESSION["hiking backpack"]->getTotalPrice() + $_SESSION["mountain bike"]->getTotalPrice() + $_SESSION["sleeping bag"]->getTotalPrice()); ?></div></div>
+         <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Total: $<?php echo ($orderTotal); ?></div></div>
          <div id="infoCol1" class="col-lg-2"><div id="numInCart" class="well well-lg">Number of Items in Cart: <?php echo $_SESSION["numInCart"] ?></div></div>
          <div id="infoCol1" class="col-lg-2"><div class=""><a href="view_cart.php" class="btn btn-primary">Return to Cart</a></div></div>
       </div>
