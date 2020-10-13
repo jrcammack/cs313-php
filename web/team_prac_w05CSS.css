@@ -1,0 +1,67 @@
+body {
+   margin: 0%;
+   padding: 0%;
+}
+
+#bannerColumn {
+   height: 100%;
+}
+
+#bannerRow {
+   height: 100%;
+}
+
+#banner {
+   height: 500px;
+   width: 100%;
+   padding: 0%;
+}
+
+#info, #intro {
+   padding-top: 20px;
+}
+
+.hero-image {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("church_logo.jpg");
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+
+.hero-text {
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+}
+
+#infoCol {
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.itemDescription {
+   text-align: center;   
+}
+
+.itemDescripRow {
+   margin-bottom: 150px;
+}
+
+.addCart {
+   background-color: green;
+   color: white;
+}
+
+.removeCart {
+   background-color: red;
+   color: white;
+}
+
+.center {
+   text-align: center;
+}
