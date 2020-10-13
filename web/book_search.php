@@ -56,8 +56,9 @@
                   // get book variable to search for
                   $book = $_POST['book'];
 
-                  $statement = $db->query("SELECT book, chapter, verse, content FROM scriptures WHERE LOWER(book) = LOWER("$book")");
-                  while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+                  $statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE LOWER(book) = LOWER(:book)");
+                  $statement->bindParam(':book', $book);
+                  foreach ($statement->execute() as $row)
                   {
                      echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b>' . ' ' . '-' . ' ' . '"' . $row['content'] . '"' . '<br><br>';
                   }
