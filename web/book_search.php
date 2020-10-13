@@ -57,11 +57,16 @@
                   $book = $_POST['book'];
 
                   $statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE LOWER(book) = LOWER(:book)");
-                  $statement->bindParam(':book', $book);
-                  foreach ($statement->execute() as $row)
+                  $statement->execute(array(':book' => $book));
+                  while ($row = $statement->fetchAll(PDO::FETCH_ASSOC))
                   {
                      echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b>' . ' ' . '-' . ' ' . '"' . $row['content'] . '"' . '<br><br>';
                   }
+
+                  // foreach ($statement->execute() as $row)
+                  // {
+                  //    echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b>' . ' ' . '-' . ' ' . '"' . $row['content'] . '"' . '<br><br>';
+                  // }
 
                   // foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures') as $row)
                   // {
