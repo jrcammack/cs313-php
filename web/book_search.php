@@ -62,7 +62,7 @@
                   
                   while ($row = $statement->fetchAll(PDO::FETCH_ASSOC))
                   {
-                     echo "<b> $row[book] $row[chapter] : $row[verse] </b> - $row[content] <br><br>";
+                     echo "<b> $row['book'] $row['chapter'] : $row['verse'] </b> - $row['content'] <br><br>";
                   }
 
                   // foreach ($statement->execute() as $row)
