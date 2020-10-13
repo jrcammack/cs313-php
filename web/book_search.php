@@ -53,7 +53,10 @@
                     die();
                   }
 
-                  $statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
+                  // get book variable to search for
+                  $book = $_POST['book'];
+
+                  $statement = $db->query("SELECT book, chapter, verse, content FROM scriptures WHERE LOWER(book) = LOWER($book)");
                   while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                   {
                      echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b>' . ' ' . '-' . ' ' . '"' . $row['content'] . '"' . '<br><br>';
@@ -64,10 +67,6 @@
                   //    echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b>' . ' ' . '-' . ' ' . $row['content'] . '<br';
                   // }
                ?>
-               <form action="book_search.php" method="POST">
-                     Book:<input type="text" name="book">
-                     <button type="submit">Search</button>
-               </form>
             </div>
          </div>
       </div>      
