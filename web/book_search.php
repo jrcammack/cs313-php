@@ -56,18 +56,32 @@
                   // get book variable to search for
                   $book = $_POST['book'];
 
-                  $statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE LOWER(book) = LOWER(:book)");
-                  $statement->execute(array(':book' => $book));
-                  // $row = $statement->fetchAll(PDO::FETCH_ASSOC);
+                  $scriptures = $db->prepare("SELECT * FROM scriptures");
+                  $scriptures->execute();
 
-                  $str = '';
-                  
-                  while ($row = $statement->fetchAll(PDO::FETCH_ASSOC))
+                  while ($sRow = $scriptures->fetch(PDO::FETCH_ASSOC))
                   {
-                     $str .= "<b> $row[book] $row[chapter] : $row[verse] </b> - $row[content] <br><br>";
+                     $book = $sRow["book"];
+                     $chapter = $sRow["chapter"];
+                     $verse = $sRow["verse"];
+                     $content = $sRow["content"];
+
+                     echo "<p>$book $chapter:$verse - $content.</p>";
                   }
 
-                  echo $str;
+
+                  // $statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE LOWER(book) = LOWER(:book)");
+                  // $statement->execute(array(':book' => $book));
+                  // // $row = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+                  // $str = '';
+                  
+                  // while ($row = $statement->fetchAll(PDO::FETCH_ASSOC))
+                  // {
+                  //    $str .= "<b> $row[book] $row[chapter] : $row[verse] </b> - $row[content] <br><br>";
+                  // }
+
+                  // echo $str;
 
                   // foreach ($statement->execute() as $row)
                   // {
