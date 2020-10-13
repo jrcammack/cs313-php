@@ -2,7 +2,7 @@
 <html lang="en">
 
    <head>
-      <title>The Camping Guide</title>
+      <title>Scripture Finder</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script type="text/javascript" src="homeJS.js"></script>
