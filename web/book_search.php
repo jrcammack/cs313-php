@@ -59,11 +59,15 @@
                   $statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE LOWER(book) = LOWER(:book)");
                   $statement->execute(array(':book' => $book));
                   // $row = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+                  $str = '';
                   
                   while ($row = $statement->fetchAll(PDO::FETCH_ASSOC))
                   {
-                     echo "<b> $row['book'] $row['chapter'] : $row['verse'] </b> - $row['content'] <br><br>";
+                     $str .= "<b> $row[book] $row[chapter] : $row[verse] </b> - $row[content] <br><br>";
                   }
+
+                  echo $str;
 
                   // foreach ($statement->execute() as $row)
                   // {
