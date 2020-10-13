@@ -56,7 +56,7 @@
                   $statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
                   while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                   {
-                     echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b>' . ' ' . '-' . ' ' . $row['content'] . '<br>';
+                     echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b>' . ' ' . '-' . ' ' . $row['content'] . '<br><br>';
                   }
 
                   // foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures') as $row)
