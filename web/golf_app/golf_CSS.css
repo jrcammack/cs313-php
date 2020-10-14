@@ -1,0 +1,15 @@
+body {
+   padding: 0px;
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+#banner {
+   height: 300px;
+   width: 100%;
+   background-image: url("golf_logo.png");
+   background-repeat: no-repeat;
+   background-size: 500px 300px;
+   background-position: left;
+}
