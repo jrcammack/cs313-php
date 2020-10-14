@@ -2,7 +2,7 @@
 <html lang="en">
 
    <head>
-      <title>Scripture Finder</title>
+      <title>Scripture Details</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script type="text/javascript" src="homeJS.js"></script>
@@ -53,11 +53,10 @@
                     die();
                   }
 
-                  // get book variable to search for
-                  $book = $_POST['book'];
+                  $id = $_GET['id'];
 
-                  $scriptures = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE LOWER(book) = LOWER(:book)");
-                  $scriptures->execute(array(':book' => $book));
+                  $scriptures = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE id = :id");
+                  $scriptures->execute(array(':id' => $id));
 
                   while ($sRow = $scriptures->fetch(PDO::FETCH_ASSOC))
                   {
@@ -65,34 +64,9 @@
                      $chapter = $sRow["chapter"];
                      $verse = $sRow["verse"];
                      $content = $sRow["content"];
-                     $id = $sRow['id'];
 
-                     echo "<p>$book $chapter:$verse - <a href='scripture_details.php?id=$id'>Content</a></p>";
+                     echo "<p>$book $chapter:$verse - $content</p>";
                   }
-
-
-                  // $statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE LOWER(book) = LOWER(:book)");
-                  // $statement->execute(array(':book' => $book));
-                  // // $row = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-                  // $str = '';
-                  
-                  // while ($row = $statement->fetchAll(PDO::FETCH_ASSOC))
-                  // {
-                  //    $str .= "<b> $row[book] $row[chapter] : $row[verse] </b> - $row[content] <br><br>";
-                  // }
-
-                  // echo $str;
-
-                  // foreach ($statement->execute() as $row)
-                  // {
-                  //    echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b>' . ' ' . '-' . ' ' . '"' . $row['content'] . '"' . '<br><br>';
-                  // }
-
-                  // foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures') as $row)
-                  // {
-                  //    echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b>' . ' ' . '-' . ' ' . $row['content'] . '<br';
-                  // }
                ?>
             </div>
          </div>
