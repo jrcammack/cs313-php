@@ -13,3 +13,7 @@ body {
    background-size: 500px 500px;
    background-position: left;
 }
+
+#homeLogin {
+   margin-top: 100px;
+}
