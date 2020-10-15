@@ -21,7 +21,7 @@
       <div id="banner"></div>
       <nav class="navbar navbar-inverse">
          <div class="navbar-header">
-            <a href="">MyGolf Homepage</a>
+            <a class="navbar-brand" href="">MyGolf Homepage</a>
          </div>     
       </nav>
       <div class="container-fluid">
