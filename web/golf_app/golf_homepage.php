@@ -26,17 +26,12 @@
       </nav>
       <div id="homeLogin" class="container-fluid">
          <div class="row">
-         <div class="col-lg-4"></div>
-            <div class="col-lg-1">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
                <div class="well well-lg">
-                  <a href="" class="btn btn-success">LOGIN</a>  
+                  <a href="" class="btn btn-success">LOGIN</a>
+                  <a href="" class="btn btn-default disabled">REGISTER</a>
                </div>
-            </div>
-            <div class="col-lg-2"></div>
-            <div class="col-lg-1">
-               <div class="well well-lg">
-                  <a href="" class="btn disabled">REGISTER</a>  
-               </div>   
             </div>
             <div class="col-lg-4"></div>
          </div>
