@@ -20,14 +20,21 @@
    <body>
       <div id="banner"></div>
       <nav class="navbar navbar-inverse">
-         <ul class="nav navbar-nav">
-            <li><a href="">Home</a></li>
-            <li><a href="">Page 1</a></li>
-            <li><a href="">Page 2</a></li>
-            <li><a href="">Page 3</a></li>
-            <li><a href="">Page 4</a></li>
-         </ul>      
-      </nav>    
+         <div class="navbar-header">
+            <a href="">MyGolf Homepage</a>
+         </div>     
+      </nav>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+               <div class="well well-lg">
+                  
+               </div>
+            </div>
+            <div class="col-lg-4"></div>
+         </div>
+      </div>          
    </body>
 
 </html>
