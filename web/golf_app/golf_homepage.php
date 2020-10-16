@@ -37,8 +37,8 @@
             <div class="col-lg-5"></div>
          </div>
       </div>
-      <div id="footer" class="container-fluid align-middle">
-         <p class="text-center">
+      <div id="footer" class="container-fluid">
+         <p class="text-center align-middle">
             MyGolf is a golfer's best friend for scorekeeping. We offer an all in one solution which will<br>
             let you track your progress. Don't waste time trying to organize those physical cards anymore.<br>
             We'll caddy for you.

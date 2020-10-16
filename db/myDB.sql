@@ -1,7 +1,6 @@
 --code to create DB structure
-
 CREATE TABLE users(
-	user_id int CONSTRAINT user_pk PRIMARY KEY,
+	user_name VARCHAR(50) CONSTRAINT user_pk PRIMARY KEY,
  	first_name VARCHAR(30) CONSTRAINT user_nn1 NOT NULL,
  	last_name VARCHAR(30) CONSTRAINT user_nn2 NOT NULL
 );
