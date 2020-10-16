@@ -53,6 +53,8 @@
                      }
    
                      $uname = $_POST['uname'];
+
+                     echo $uname;
    
                      $games = $db->prepare("SELECT u.first_name, u.last_name, gt.game_type, g.game_date, g.course_name, g.score
                                            FROM users u INNER JOIN golf_game ON u.user_name = g.user_name
