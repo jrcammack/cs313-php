@@ -30,6 +30,7 @@
             <div class="col-lg-2">
                <div class="well well-lg text-center">
                   <a href="" class="btn btn-success">LOGIN</a>
+                  <br>
                   <a href="" class="btn btn-default disabled">REGISTER</a>
                </div>
             </div>
