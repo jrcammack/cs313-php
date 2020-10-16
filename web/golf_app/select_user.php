@@ -30,7 +30,8 @@
             <div class="col-lg-4">
                <div class="well well-lg text-center">
                   <form action="user_dash.php" method="POST">
-                     Username:<input type="text" name="uname"><br>   
+                     Username:<input type="text" name="uname"><br>
+                     <button type="submit">Submit</button>   
                   </form>
                </div>
             </div>
