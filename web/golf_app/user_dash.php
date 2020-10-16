@@ -57,7 +57,7 @@
                      echo $uname;
    
                      $games = $db->prepare("SELECT u.first_name, u.last_name, gt.game_type, g.game_date, g.course_name, g.score
-                                           FROM users u INNER JOIN golf_game ON u.user_name = g.user_name
+                                           FROM users u INNER JOIN golf_game g ON u.user_name = g.user_name
                                            INNER JOIN game_type_lookup gt ON g.game_type_id = gt.game_type_id 
                                            WHERE u.user_name = :uname");
                      $games->execute(array(':uname' => $uname));

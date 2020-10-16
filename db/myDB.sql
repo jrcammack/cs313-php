@@ -13,16 +13,13 @@ CREATE TABLE game_type_lookup(
 CREATE TABLE golf_game(
 	game_id int CONSTRAINT golf_game_pk PRIMARY KEY,
  	game_type_id int CONSTRAINT golf_game_fk1 REFERENCES game_type_lookup(game_type_id),
-   user_id int CONSTRAINT golf_game_fk2 REFERENCES users(user_id),
+   user_name VARCHAR(50) CONSTRAINT golf_game_fk2 REFERENCES users(user_name),
    game_date date CONSTRAINT golf_game_nn1 NOT NULL,
    course_name VARCHAR(100) CONSTRAINT golf_game_nn2 NOT NULL,
    score int CONSTRAINT golf_game_nn3 NOT NULL
 );
 
 --code to create pk sequences
-CREATE SEQUENCE users_s
-INCREMENT BY 1;
-
 CREATE SEQUENCE game_type_lookup_s
 INCREMENT BY 1;
 

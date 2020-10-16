@@ -42,3 +42,8 @@ VALUES ('cheddarrulz', 'Raymond', 'Holt');
 INSERT INTO golf_game
 (game_id, game_type_id, game_date, course_name, user_name, score)
 VALUES (nextval('golf_game_s'), 1, '2020-08-14', 'South Ridge', 'cheddarrulz', 27);
+
+SELECT u.first_name, u.last_name, gt.game_type, g.game_date, g.course_name, g.score
+FROM users u INNER JOIN golf_game g ON u.user_name = g.user_name
+INNER JOIN game_type_lookup gt ON g.game_type_id = gt.game_type_id 
+WHERE u.user_name = 'bobbyhope';
