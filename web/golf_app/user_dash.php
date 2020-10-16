@@ -62,12 +62,12 @@
    
                      while ($sRow = $games->fetch(PDO::FETCH_ASSOC))
                      {
-                        $fname = $sRow["u.first_name"];
-                        $lname = $sRow["u.last_name"];
-                        $gameType = $sRow["gt.game_type"];
-                        $date = $sRow["g.game_date"];
-                        $course = $sRow["g.course_name"];
-                        $score = $sRow["g.score"];
+                        $fname = $sRow["first_name"];
+                        $lname = $sRow["last_name"];
+                        $gameType = $sRow["game_type"];
+                        $date = $sRow["game_date"];
+                        $course = $sRow["course_name"];
+                        $score = $sRow["score"];
    
                         echo "<p>$fname $lname $gameType $date $course $score</p>";
                      }
