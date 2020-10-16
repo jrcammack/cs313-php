@@ -9,36 +9,36 @@ VALUES (nextval('game_type_lookup_s'), '18-Hole');
 
 -- inserting 1st test user
 INSERT INTO users
-(user_id, first_name, last_name)
-VALUES (nextval('users_s'), 'Tiger', 'Woods');
+(user_name, first_name, last_name)
+VALUES ('TWoody', 'Tiger', 'Woods');
 
 INSERT INTO golf_game
-(game_id, game_type_id, game_date, course_name, user_id, score)
-VALUES (nextval('golf_game_s'), 1, '2020-03-23', 'Pebble Creek', currval('users_s'), 45);
+(game_id, game_type_id, game_date, course_name, user_name, score)
+VALUES (nextval('golf_game_s'), 1, '2020-03-23', 'Pebble Creek', 'TWoody', 45);
 
 -- inserting 2nd test user
 INSERT INTO users
-(user_id, first_name, last_name)
-VALUES (nextval('users_s'), 'Bob', 'Hope');
+(user_name, first_name, last_name)
+VALUES ('bobbyhope', 'Bob', 'Hope');
 
 INSERT INTO golf_game
-(game_id, game_type_id, game_date, course_name, user_id, score)
-VALUES (nextval('golf_game_s'), 2, '2020-04-18', 'Pinecrest', currval('users_s'), 40);
+(game_id, game_type_id, game_date, course_name, user_name, score)
+VALUES (nextval('golf_game_s'), 2, '2020-04-18', 'Pinecrest', 'bobbyhope', 40);
 
 -- inserting 3rd test user
 INSERT INTO users
-(user_id, first_name, last_name)
-VALUES (nextval('users_s'), 'Adam', 'Sandler');
+(user_name, first_name, last_name)
+VALUES ('sandman', 'Adam', 'Sandler');
 
 INSERT INTO golf_game
-(game_id, game_type_id, game_date, course_name, user_id, score)
-VALUES (nextval('golf_game_s'), 2, '2020-01-05', 'Sandhills', currval('users_s'), 34);
+(game_id, game_type_id, game_date, course_name, user_name, score)
+VALUES (nextval('golf_game_s'), 2, '2020-01-05', 'Sandhills', 'sandman', 34);
 
 -- inserting 4th test user
 INSERT INTO users
-(user_id, first_name, last_name)
-VALUES (nextval('users_s'), 'Raymond', 'Holt');
+(user_name, first_name, last_name)
+VALUES ('cheddarrulz', 'Raymond', 'Holt');
 
 INSERT INTO golf_game
-(game_id, game_type_id, game_date, course_name, user_id, score)
-VALUES (nextval('golf_game_s'), 1, '2020-08-14', 'South Ridge', currval('users_s'), 27);
+(game_id, game_type_id, game_date, course_name, user_name, score)
+VALUES (nextval('golf_game_s'), 1, '2020-08-14', 'South Ridge', 'cheddarrulz', 27);

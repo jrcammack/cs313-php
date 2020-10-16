@@ -24,17 +24,17 @@
             <a class="navbar-brand" href="golf_homepage.php">MyGolf Homepage</a>
          </div>     
       </nav>
-      <div id="homeLogin" class="container-fluid">
+      <div id="" class="container-fluid">
          <div class="row">
-            <div class="col-lg-5"></div>
-            <div class="col-lg-2">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
                <div class="well well-lg text-center">
-                  <a href="select_user.php" class="btn btn-success">LOGIN</a>
-                  <br>
-                  <a href="" class="btn btn-default disabled">REGISTER</a>
+                  <form action="user_dash.php" method="POST">
+                     Username:<input type="text" name="uname"><br>   
+                  </form>
                </div>
             </div>
-            <div class="col-lg-5"></div>
+            <div class="col-lg-4"></div>
          </div>
       </div>
       <div id="footer" class="container-fluid">
