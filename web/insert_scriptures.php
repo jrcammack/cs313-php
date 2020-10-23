@@ -25,9 +25,14 @@
    $chapter = $_POST["chapter"];
    $verse = $_POST["verse"];
    $content = $_POST["content"];
-   $topics = $_POST["topics"];
+   $topics_array = $_POST["topics"];
+   $topics_string = '';
 
-   echo $book . ' ' . $chapter . ' ' . $verse . ' ' . $content . " " . $topics;
+   foreach ($topics_array as $topic){
+      $topics_string .= $topics_string . ', ';
+   }
+
+   echo $book . ' ' . $chapter . ' ' . $verse . ' ' . $content . " " . $topics_string;
 
    // $scriptures = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE id = :id");
    // $scriptures->execute(array(':id' => $id));

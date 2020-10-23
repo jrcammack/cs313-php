@@ -67,7 +67,7 @@
                      {
                         $id = $row['id'];
                         $name = $row['name'];
-                        echo "<input type='checkbox' name='topics' id='topics$id' value='$id'>";
+                        echo "<input type='checkbox' name='topics[]' id='topics$id' value='$id'>";
                         echo "<label for='topics$id'>$name</label><br>";
                      }
                   ?>
