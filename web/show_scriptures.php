@@ -60,10 +60,10 @@
                
                   while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                   {
-                     $book = $_POST["book"];
-                     $chapter = $_POST["chapter"];
-                     $verse = $_POST["verse"];
-                     $content = $_POST["content"];
+                     $book = $row["book"];
+                     $chapter = $row["chapter"];
+                     $verse = $row["verse"];
+                     $content = $row["content"];
                      $name = $row['name'];
                      $txt .= "<b>$book $chapter:$verse</b> $content, $name<br>";
                   }
