@@ -36,7 +36,7 @@
 
    $statement->execute();
 
-   $scripId = $db->lastInsertId("scriptures_id_seq")
+   $scripId = $db->lastInsertId("scriptures_id_seq");
 
    foreach($topics_array as $topic){
       $statement = $db->prepare('INSERT INTO link_scriptures_topics (topic_id, scripture_id) VALUES (:topicId, :scriptureId)');
