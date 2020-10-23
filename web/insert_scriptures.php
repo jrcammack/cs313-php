@@ -38,14 +38,16 @@
 
    $scripId = $db->lastInsertId("scriptures_id_seq");
 
-   foreach($topics_array as $topic){
-      $statement = $db->prepare('INSERT INTO link_scriptures_topics (topic_id, scripture_id) VALUES (:topicId, :scriptureId)');
-      $statement->bindValue(':topicId', $topic);
-      $statement->bindValue(':scriptureId', $scripId);
-      $statement->execute();
-   }
+   echo $scripId;
 
-   header("Location: show_scriptures.php");
+   // foreach($topics_array as $topic){
+   //    $statement = $db->prepare('INSERT INTO link_scriptures_topics (topic_id, scripture_id) VALUES (:topicId, :scriptureId)');
+   //    $statement->bindValue(':topicId', $topic);
+   //    $statement->bindValue(':scriptureId', $scripId);
+   //    $statement->execute();
+   // }
 
-   die();
+   // header("Location: show_scriptures.php");
+
+   // die();
 ?>
