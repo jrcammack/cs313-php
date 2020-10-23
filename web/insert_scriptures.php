@@ -29,7 +29,7 @@
    $topics_string = '';
 
    foreach ($topics_array as $topic){
-      $topics_string .= $topics_string . ', ';
+      $topics_string .= ($topics_string . ', ');
    }
 
    echo $book . ' ' . $chapter . ' ' . $verse . ' ' . $content . " " . $topics_string;
