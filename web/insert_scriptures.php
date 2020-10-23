@@ -26,13 +26,26 @@
    $verse = $_POST["verse"];
    $content = $_POST["content"];
    $topics_array = $_POST["topics"];
-   $topics_string = '';
 
-   foreach ($topics_array as $topic){
-      echo $topic;
+   $statement = $db->prepare('INSERT INTO scripture (book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content)');
+
+   $statement->bindValue(':book', $book);
+   $statement->bindValue(':chapter', $chapter);
+   $statement->bindValue(':verse', $verse);
+   $statement->bindValue(':content', $content);
+
+   $statement->execute();
+
+   $scripId = $db->lastInsertId("scriptures_id_seq")
+
+   foreach($topics_array as $topic){
+      $statement = $db->prepare('INSERT INTO link_scriptures_topics (topic_id, scripture_id) VALUES (:topicId, :scriptureId)');
+      $statement->bindValue(':topicId', $topic);
+      $statement->bindValue(':scriptureId', $scripId);
+      $statement->execute();
    }
 
-   echo $book . ' ' . $chapter . ' ' . $verse . ' ' . $content;
+   header("Location: show_scriptures.php");
 
    // $scriptures = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE id = :id");
    // $scriptures->execute(array(':id' => $id));
