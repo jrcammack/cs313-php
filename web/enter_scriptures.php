@@ -35,6 +35,7 @@
                   Chapter:<input type="text" name="chapter"><br>
                   Verse:<input type="text" name="verse"><br>
                   Content:<textarea name="content" rows="5" cols="60"></textarea><br>
+                  Topics:<br>
 
                   <?php
                      try
