@@ -55,6 +55,8 @@
                
                   $statement = $db->prepare("SELECT book, chapter, verse, content, name FROM scriptures s INNER JOIN link_scriptures_topics lst ON s.id = lst.scriptures_id INNER JOIN topic t ON lst.topic_id = t.id");
                   $statement->execute();
+
+                  $txt = '';
                
                   while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                   {
@@ -63,8 +65,10 @@
                      $verse = $_POST["verse"];
                      $content = $_POST["content"];
                      $name = $row['name'];
-                     echo "<b>$book $chapter:$verse</b> $content, $name";
+                     $txt .= "<b>$book $chapter:$verse</b> $content, $name<br>";
                   }
+
+                  echo $txt;
                ?>
             </div>
          </div>
