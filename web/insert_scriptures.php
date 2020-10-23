@@ -29,10 +29,10 @@
    $topics_string = '';
 
    foreach ($topics_array as $topic){
-      $topics_string .= ($topics_string . ', ');
+      echo $topic;
    }
 
-   echo $book . ' ' . $chapter . ' ' . $verse . ' ' . $content . " " . $topics_string;
+   echo $book . ' ' . $chapter . ' ' . $verse . ' ' . $content;
 
    // $scriptures = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE id = :id");
    // $scriptures->execute(array(':id' => $id));
