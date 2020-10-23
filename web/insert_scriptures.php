@@ -27,7 +27,7 @@
    $content = $_POST["content"];
    $topics_array = $_POST["topics"];
 
-   $statement = $db->prepare('INSERT INTO scripture (book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content)');
+   $statement = $db->prepare('INSERT INTO scriptures (book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content)');
 
    $statement->bindValue(':book', $book);
    $statement->bindValue(':chapter', $chapter);
@@ -47,13 +47,5 @@
 
    header("Location: show_scriptures.php");
 
-   // $scriptures = $db->prepare("SELECT book, chapter, verse, content FROM scriptures WHERE id = :id");
-   // $scriptures->execute(array(':id' => $id));
-
-   // while ($sRow = $scriptures->fetch(PDO::FETCH_ASSOC))
-   // {
-      
-
-   //    echo "<p>$book $chapter:$verse - $content</p>";
-   // }
+   die();
 ?>
