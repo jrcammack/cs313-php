@@ -108,10 +108,10 @@
                      Game Type:<select name="gameType">
                         <option value="1">9-Hole</option>
                         <option value="2">18-Hole</option>
-                     </select>
-                     Game Date:<input type="date" name="gameDate">
-                     Course Name:<input type="text" name="courseName">
-                     Score:<input type="number" name="score">
+                     </select><br>
+                     Game Date:<input type="date" name="gameDate"><br>
+                     Course Name:<input type="text" name="courseName"><br>
+                     Score:<input type="number" name="score"><br>
                      <input type="submit" name="addNewGame"><br>
                   </form>
                </div>
