@@ -1,8 +1,8 @@
 <?php
-//start the session
-session_start();
-$_SESSION["newUser"] = true;
-$_SESSION['newUname'] = '';
+   //start the session
+   session_start();
+   $_SESSION["newUser"] = true;
+   $_SESSION['newUname'] = '';
 ?>
 
 <!DOCTYPE html>

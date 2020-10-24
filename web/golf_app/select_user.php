@@ -78,7 +78,7 @@
                            header("Location: user_dash.php");
                         }
                         else {
-                           echo "Username not found. Please return to home page and register or enter correct username."
+                           echo "Username not found. Please return to home page and register or enter correct username.";
                         }
                      }
                   ?>
