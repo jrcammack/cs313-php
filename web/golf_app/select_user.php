@@ -2,6 +2,7 @@
    //start the session
    session_start();
    $_SESSION["newUSer"] = false;
+   $_SESSION["verifiedUname"] = '';
 ?>
 
 <!DOCTYPE html>
@@ -35,10 +36,52 @@
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
                <div class="well well-lg text-center">
-                  <form action="user_dash.php" method="POST">
+                  <form action="select_user.php" method="POST">
                      Username:<input type="text" name="uname"><br>
-                     <button type="submit">Submit</button>   
+                     <input type="submit" name="submitExistingUname">   
                   </form>
+                  <?php
+                     if(isset($_POST["submitExistingUname"])){
+                        try
+                        {
+                           $dbUrl = getenv('DATABASE_URL');
+                           
+                           $dbOpts = parse_url($dbUrl);
+                           
+                           $dbHost = $dbOpts["host"];
+                           $dbPort = $dbOpts["port"];
+                           $dbUser = $dbOpts["user"];
+                           $dbPassword = $dbOpts["pass"];
+                           $dbName = ltrim($dbOpts["path"],'/');
+                           
+                           $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+                           
+                           $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                        }
+                     
+                        catch (PDOException $ex)
+                        {
+                           echo 'Error!: ' . $ex->getMessage();
+                           die();
+                        }
+                     
+                        $uname = $_POST["uname"];
+                     
+                        $statement = $db->prepare("SELECT user_name FROM users WHERE user_name = :uname");
+                        $statement->bindValue(':uname', $uname);
+                        $statement->execute();
+                     
+                        $row = $statement->fetch();
+                     
+                        if($row){
+                           $_SESSION["verifiedUname"] = $_POST["uname"];
+                           header("Location: user_dash.php");
+                        }
+                        else {
+                           echo "Username not found. Please return to home page and register or enter correct username."
+                        }
+                     }
+                  ?>
                </div>
             </div>
             <div class="col-lg-4"></div>

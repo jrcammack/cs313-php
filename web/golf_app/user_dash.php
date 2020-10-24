@@ -1,6 +1,8 @@
 <?php
    //start the session
    session_start();
+
+
 ?>
 
 <!DOCTYPE html>
@@ -65,7 +67,24 @@
                         $uname = $_SESSION['newUname'];
                      }
                      else {
-                        $uname = $_POST['uname'];
+                        $uname = $_SESSION["verifiedUname"];
+                     }
+
+                     //if submit was pressed then send query to DB for storage
+                     if(isset($_POST["addNewGame"])){
+                        $gameType = $_POST["gameType"];
+                        $gameDate = $_POST["gameDate"];
+                        $courseName = $_POST['courseName'];
+                        $score = $_POST['score'];
+
+                        $statement = $db->prepare("INSERT INTO golf_game (game_type_id, user_name, game_date, course_name, score) VALUES (:game_type_id, :user_name, :game_date, :course_name, :score)");
+                        $statement->bindValue(':game_type_id', $gameType);
+                        $statement->bindValue(':user_name', $uname);
+                        $statement->bindValue(':game_date', $gameDate);
+                        $statement->bindValue(':course_name', $courseName);
+                        $statement->bindValue(':score', $score);
+
+                        $statement->execute();
                      }
    
                      $games = $db->prepare("SELECT u.first_name, u.last_name, gt.game_type, g.game_date, g.course_name, g.score
@@ -86,6 +105,17 @@
                         echo "<p>$fname $lname $gameType $date $course $score</p>";
                      }
                   ?>
+                  <form method="POST" action="user_dash.php">
+                     Add New Game:<br>
+                     Game Type:<select name="gameType">
+                        <option value="1">9-Hole</option>
+                        <option value="2">18-Hole</option>
+                     </select>
+                     Game Date:<input type="date" name="gameDate">
+                     Course Name:<input type="text" name="courseName">
+                     Score:<input type="number" name="score">
+                     <input type="submit" name="addNewGame"><br>
+                  </form>
                </div>
             </div>
             <div class="col-lg-2"></div>
