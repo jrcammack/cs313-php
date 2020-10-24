@@ -62,6 +62,7 @@
                   
                      $statement = $db->prepare("SELECT id, name FROM topic");
                      $statement->execute();
+                     $counter = 1;
                   
                      while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                      {
@@ -69,7 +70,10 @@
                         $name = $row['name'];
                         echo "<input type='checkbox' name='topics[]' id='topics$id' value='$id'>";
                         echo "<label for='topics$id'>$name</label><br>";
+                        $counter++;
                      }
+                     echo "<input type='checkbox' name='topics[]' id='topics$counter' value='$counter'>";
+                     echo "<input type='text' name='newTopic'><br>";
                   ?>
                   <button type="submit">Submit</button>
                </form> 

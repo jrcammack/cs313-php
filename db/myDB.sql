@@ -6,12 +6,12 @@ CREATE TABLE users(
 );
 
 CREATE TABLE game_type_lookup(
-	game_type_id int CONSTRAINT game_type_lookup_pk PRIMARY KEY,
+	game_type_id SERIAL CONSTRAINT game_type_lookup_pk PRIMARY KEY,
  	game_type VARCHAR(30) CONSTRAINT game_type_lookup_nn1 NOT NULL
 );
 
 CREATE TABLE golf_game(
-	game_id int CONSTRAINT golf_game_pk PRIMARY KEY,
+	game_id SERIAL CONSTRAINT golf_game_pk PRIMARY KEY,
  	game_type_id int CONSTRAINT golf_game_fk1 REFERENCES game_type_lookup(game_type_id),
    user_name VARCHAR(50) CONSTRAINT golf_game_fk2 REFERENCES users(user_name),
    game_date date CONSTRAINT golf_game_nn1 NOT NULL,
@@ -20,17 +20,17 @@ CREATE TABLE golf_game(
 );
 
 --code to create pk sequences
-CREATE SEQUENCE game_type_lookup_s
-INCREMENT BY 1;
+-- CREATE SEQUENCE game_type_lookup_s
+-- INCREMENT BY 1;
 
-CREATE SEQUENCE golf_game_s
-INCREMENT BY 1;
+-- CREATE SEQUENCE golf_game_s
+-- INCREMENT BY 1;
 
 --code to do initial inserts of lookup table
 INSERT INTO game_type_lookup
-(game_type_id, game_type)
-VALUES (nextval('game_type_lookup_s'), '9-Hole');
+(game_type)
+VALUES ('9-Hole');
 
 INSERT INTO game_type_lookup
-(game_type_id, game_type)
-VALUES (nextval('game_type_lookup_s'), '18-Hole');
+(game_type)
+VALUES ('18-Hole');

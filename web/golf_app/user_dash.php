@@ -1,3 +1,8 @@
+<?php
+   //start the session
+   session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,8 +56,17 @@
                        echo 'Error!: ' . $ex->getMessage();
                        die();
                      }
-   
-                     $uname = $_POST['uname'];
+
+                     //check whether the user is newly registered or not 
+                     //and get uname from correct source
+                     $uname = '';
+
+                     if(isset($_SESSION["newUser"]) and $_SESSION["newUser"] == true){
+                        $uname = $_SESSION['newUname'];
+                     }
+                     else {
+                        $uname = $_POST['uname'];
+                     }
    
                      $games = $db->prepare("SELECT u.first_name, u.last_name, gt.game_type, g.game_date, g.course_name, g.score
                                            FROM users u INNER JOIN golf_game g ON u.user_name = g.user_name

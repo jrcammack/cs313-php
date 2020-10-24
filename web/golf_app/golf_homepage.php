@@ -1,3 +1,9 @@
+<?php
+   //start the session
+   session_start();
+   $_SESSION["newUser"] = false;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +37,7 @@
                <div class="well well-lg text-center">
                   <a href="select_user.php" class="btn btn-success">LOGIN</a>
                   <br>
-                  <a href="" class="btn btn-default disabled">REGISTER</a>
+                  <a href="register_new_user.php" class="btn btn-default">REGISTER</a>
                </div>
             </div>
             <div class="col-lg-5"></div>

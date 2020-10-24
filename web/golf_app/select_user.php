@@ -1,3 +1,9 @@
+<?php
+   //start the session
+   session_start();
+   $_SESSION["newUSer"] = false;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
